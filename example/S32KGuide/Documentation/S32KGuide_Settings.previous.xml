@@ -71,19 +71,5 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="adConv1" type="adc">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="adConv1" />
-      <Device v="ADC0" />
-      <Component_version v="S32K144_SDK01" />
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>
 

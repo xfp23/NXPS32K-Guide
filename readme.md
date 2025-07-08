@@ -4,49 +4,54 @@
 
 © 2025 . 未经许可不得复制、修改或分发。 此文献为 [小风的藏书阁](https://t.me/xfp2333) 所有。
 
-## 环境搭建
+## 环境
 
 [环境搭建指南](./environment/env.md)
+
+[添加源文件]()
+
+[添加自定义组件]()
 
 ## 外设API
 
 ### GPIO
 
 [GPIO指南](./Peripheral/gpio/gpio.md)
+
 [GPIO外部中断](./Peripheral/gpio/ex_Interrupt.md)
 
 ### ADC
 
-[ADC单次转换]()
+[ADC单次转换](./Peripheral/adc/Single.md)
 
-[ADC连续转换]()
+[ADC连续转换](./Peripheral/adc/Continuous.md)
 
 ### 定时器
 
-[定时器指南]()
+[定时器指南](./Peripheral/Timer/Timing.md)
 
-[生成PWM]()
+[生成PWM](./Peripheral/Timer/pwm.md)
 
-[定时器捕获]()
+[定时器捕获](./Peripheral/Timer/capture.md)
 
 ### UART
 
-[UART]()
+[UART](./Peripheral/uart/uart.md)
 
 ### I2C
 
-[I2C主机指南]()
-[I2C从机指南]()
+[I2C主机指南](./Peripheral/I2C/I2C_Master.md)
+[I2C从机指南](./Peripheral/I2C/I2C_Slave.md)
 
 ### SPI
 
-[SPI主机指南]()
+[SPI主机指南](./Peripheral/SPI/Spi_Master.md)
 
-[SPI从机指南]()
+[SPI从机指南](./Peripheral/SPI/Spi_Slave.md)
 
 ### CAN
 
-[CAN]()
+[CAN](./Peripheral/CAN/CAN.md)
 
 
 ### LIN
@@ -54,8 +59,13 @@
 
 ## 系统API
 
+[flash]()
 
-## RTOS
+[RTC]()
+
+[睡眠]()
+
+[RTOS]()
 
 
 

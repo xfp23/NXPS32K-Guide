@@ -26,7 +26,7 @@
 /* Including necessary module. Cpu.h contains other modules needed for compiling.*/
 #include "Cpu.h"
 #include "pins_driver.h"
-
+#include "flag.h"
 
   volatile int exit_code = 0;
 
@@ -47,19 +47,14 @@ int main(void)
     PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
   #endif
   /*** End of Processor Expert internal initialization.                    ***/
-PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
-
+PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr); // 初始化GPIO
+ADC_DRV_ConfigConverter(INST_ADCONV1, &adConv1_ConvConfig1); // 初始化ADC
+ADC_DRV_AutoCalibration(INST_ADCONV1); // 校准ADC
 
 while(1)
 {
-PINS_DRV_WritePin(PTE,13,0); // 写入低
-PINS_DRV_WritePin(PTE,13,1);
-PINS_DRV_WritePins(PTE, 1 << 13); // 给端口整组写入掩
-	if((PINS_DRV_ReadPins(PTC) & 1 << 13) == 1) // 读取整个端口引脚
-	{
-		PINS_DRV_WritePin(PTE,13,1);
-	}
-
+  UserGuide_gpio();
+  UserGuide_adc();
 //	if(PINS_DRV_ReadPin(PTC,13) == 0) // 读取单个引脚
 //	{
 //		PINS_DRV_WritePin(PTE,13,0);

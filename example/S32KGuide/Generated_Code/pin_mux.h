@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-08, 14:32, # CodeGen: 5
+**     Date/Time   : 2025-07-08, 15:51, # CodeGen: 6
 **     Abstract    :
 **
 **     Settings    :
@@ -1040,7 +1040,7 @@
 **                Custom name, Signal name                 : PTC11
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : ISF flag and Interrupt on falling-edge.
-**                Pin Mux Field                            : <Automatic>
+**                Pin Mux Field                            : Alternative 1 (GPIO).
 **                Lock Field                               : <Automatic>
 **                Pull Enable Field                        : Enabled
 **                Pull Select Field                        : <Automatic>
