@@ -64,7 +64,30 @@ PINS_DRV_WritePins(PTE, 1 << 13); // 给端口整组写入掩
 //	{
 //		PINS_DRV_WritePin(PTE,13,0);
 //	}
-
+//	PINS_DRV_SetPullSel();
+//PINS_DRV_SetMuxModeSel();
+//PINS_DRV_SetPinIntSel();
+//PINS_DRV_GetPinIntSel();
+//PINS_DRV_ClearPinIntFlagCmd();
+//PINS_DRV_EnableDigitalFilter();
+//PINS_DRV_DisableDigitalFilter();
+//PINS_DRV_ConfigDigitalFilter();
+//PINS_DRV_GetPortIntFlag();
+//PINS_DRV_ClearPortIntFlagCmd();
+//PINS_DRV_SetGlobalPinControl();
+//PINS_DRV_SetGlobalIntControl();
+//PINS_DRV_GetPinsDirection();
+//PINS_DRV_SetPinDirection();
+//PINS_DRV_SetPinsDirection();
+//PINS_DRV_SetPortInputDisable();
+//PINS_DRV_GetPortInputDisable();
+//PINS_DRV_WritePin();
+//PINS_DRV_WritePins();
+//PINS_DRV_GetPinsOutput();
+//PINS_DRV_SetPins();
+//PINS_DRV_ClearPins();
+//PINS_DRV_TogglePins();
+//PINS_DRV_ReadPins();
 }
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
   #ifdef PEX_RTOS_START

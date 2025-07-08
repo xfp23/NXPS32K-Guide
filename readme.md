@@ -2,13 +2,18 @@
 
 ## 版权
 
-© 2024 . 未经许可不得复制、修改或分发。 此文献为 [小风的藏书阁](https://t.me/xfp2333) 所有。
+© 2025 . 未经许可不得复制、修改或分发。 此文献为 [小风的藏书阁](https://t.me/xfp2333) 所有。
+
+## 环境搭建
+
+[环境搭建指南](./environment/env.md)
 
 ## 外设API
 
 ### GPIO
 
 [GPIO指南](./Peripheral/gpio/gpio.md)
+[GPIO外部中断](./Peripheral/gpio/ex_Interrupt.md)
 
 ### ADC
 
@@ -22,7 +27,7 @@
 
 [生成PWM]()
 
-[捕获方波]()
+[定时器捕获]()
 
 ### UART
 
