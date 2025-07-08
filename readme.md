@@ -59,6 +59,8 @@
 
 ## 系统API
 
+[时钟配置](./System/Colock/config.md)
+
 [flash]()
 
 [RTC]()

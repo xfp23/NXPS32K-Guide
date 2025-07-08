@@ -35,7 +35,7 @@
       <File Name="SDK/platform/devices/status.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631798" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/devices/device_registers.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631803" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/drivers/src/clock/S32K1xx/pcc_hw_access.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631730" FileType="1048576" CompNumb="3" />
-      <File Name="Sources/main.c" FileDate="2025-07-08, 16:45:38" FileAge="1751964338544" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2025-07-08, 17:06:09" FileAge="1751965569075" FileType="128" />
       <File Name="SDK/platform/devices/startup.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631828" FileType="1048576" CompNumb="1" />
       <File Name="Generated_Code/adConv1.h" FileDate="2025-07-08, 16:42:59" FileAge="1751964179132" FileType="45637" CompNumb="5" />
       <File Name="SDK/platform/drivers/src/pins/pins_gpio_hw_access.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631633" FileType="1048576" CompNumb="2" />
@@ -63,5 +63,5 @@
       <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2025-07-08, 13:13:51" FileAge="1751951631649" FileType="1048576" CompNumb="2" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>10</CodeGenReference>
+  <CodeGenReference>11</CodeGenReference>
 </CodeGenerationInfo>
