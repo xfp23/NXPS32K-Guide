@@ -63,8 +63,8 @@ int main(void)
   ///** 设置外部中断 *
 
   /* 设置中断触发条件 */
-  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�??
-  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�??
+  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�?????
+  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�?????
   /* 安装中断处理函数 */
   INT_SYS_InstallHandler(PORTC_IRQn, &PTC_EXT_IRQ, NULL);
   /* 启用中断 */
@@ -79,10 +79,12 @@ int main(void)
   LPUART_DRV_ReceiveData(INST_LPUART1, UserCommon.Uart1_rxdata, UART_BUFFERSIZE);
   OSIF_TimeDelay(100); // 100ms 延时
 
+  /**I2C Init */
+  LPI2C_DRV_MasterInit(INST_LPI2C1, &lpi2c1_MasterConfig0,&lpi2c1_MasterState);
 
   /** PWM init */
 PWM_Init(&pwm_pal1Instance, &pwm_pal1Configs);
-PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50/100));// 占空比根据周期计算
+PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50/100));// 占空比根据周期计�???
 //PWM_Deinit(&pwm_pal1Instance); // 删除pwm驱动
 
 

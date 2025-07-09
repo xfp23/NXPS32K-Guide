@@ -140,5 +140,33 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
+  <Bean name="pwm_pal1" type="pwm_pal">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="pwm_pal1" />
+      <Device v="FTM2" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="i2c1" type="i2c_pal">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="i2c1" />
+      <Device v="LPI2C0" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>
 

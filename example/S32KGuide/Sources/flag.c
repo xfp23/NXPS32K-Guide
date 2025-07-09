@@ -208,4 +208,56 @@ void UART_RX_DMA_Callback(void *driverState, uart_event_t event, void *userData)
 
 }
 
+lpi2c_master_state_t lpi2c1_MasterState;
+
+#define I2C_TIMEOUT_MS 100U
+#define SEND_STOP_AFTER_TX true
+
+/**
+ * @brief I2C 写入多个字节到当前已配置的从设备地址
+ * 
+ * @param buffer 要发送的数据指针
+ * @param size   数据长度
+ */
+void UserTools_I2C_Writebytes(uint8_t* buffer, size_t size)
+{
+    if (buffer == NULL || size == 0) return;
+
+    status_t status = LPI2C_DRV_MasterSendDataBlocking(
+        INST_LPI2C1,          // I2C实例编号
+        buffer,               // 要发送的数据
+        size,                 // 数据长度
+        SEND_STOP_AFTER_TX,  // 是否发送 STOP
+        I2C_TIMEOUT_MS        // 超时时间
+    );
+
+    if (status != STATUS_SUCCESS)
+    {
+        // 处理错误，例如设置一个标志位
+    }
+}
+
+/**
+ * @brief 从当前已配置的从设备地址读取多个字节
+ * 
+ * @param buffer 接收数据缓存区指针
+ * @param size   要读取的字节数
+ */
+void UserTools_I2C_Readbytes(uint8_t *buffer, size_t size)
+{
+    if (buffer == NULL || size == 0) return;
+
+    status_t status = LPI2C_DRV_MasterReceiveDataBlocking(
+        INST_LPI2C1,          // I2C实例编号
+        buffer,               // 接收缓冲区
+        size,                 // 要接收的数据字节数
+        SEND_STOP_AFTER_TX,  // 是否发送 STOP
+        I2C_TIMEOUT_MS        // 超时时间
+    );
+
+    if (status != STATUS_SUCCESS)
+    {
+        // 处理错误，例如设置一个标志位
+    }
+}
 

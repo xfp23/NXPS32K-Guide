@@ -39,7 +39,7 @@ typedef struct
 
 extern ftm_state_t UserState_FTM0;
 extern UserCommon_t UserCommon;
-
+extern lpi2c_master_state_t lpi2c1_MasterState;
 extern void UserGuide_gpio();
 extern void UserGuide_adc();
 extern void Timer0_PeriodElapsedISR();

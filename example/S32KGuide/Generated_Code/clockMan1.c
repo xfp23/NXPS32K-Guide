@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 10:52, # CodeGen: 14
+**     Date/Time   : 2025-07-09, 16:29, # CodeGen: 20
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -77,6 +77,13 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
         .divider          = DIVIDE_BY_ONE,
     },
     {
+        .clockName        = FLEXIO0_CLK,
+        .clkGate          = true,
+        .clkSrc           = CLK_SRC_SIRC_DIV2,
+        .frac             = MULTIPLY_BY_ONE,
+        .divider          = DIVIDE_BY_ONE,
+    },
+    {
         .clockName        = FTM0_CLK,
         .clkGate          = true,
         .clkSrc           = CLK_SRC_SIRC_DIV1,
@@ -101,6 +108,13 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
         .clockName        = FTM3_CLK,
         .clkGate          = true,
         .clkSrc           = CLK_SRC_SIRC_DIV1,
+        .frac             = MULTIPLY_BY_ONE,
+        .divider          = DIVIDE_BY_ONE,
+    },
+    {
+        .clockName        = LPI2C0_CLK,
+        .clkGate          = true,
+        .clkSrc           = CLK_SRC_SIRC_DIV2,
         .frac             = MULTIPLY_BY_ONE,
         .divider          = DIVIDE_BY_ONE,
     },

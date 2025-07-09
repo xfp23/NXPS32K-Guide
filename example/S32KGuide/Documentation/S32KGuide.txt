@@ -216,6 +216,33 @@ Module "pwm_pal1"  (component pwm_pal)
                 corresponding channel.
    - pwm_pal1_PWM_Deinit -Uninitialised PWM instance.
 
+Module "lpi2c1"    (component lpi2c)
+   - lpi2c1_LPI2C_DRV_MasterInit -Initialize the LPI2C master mode driver.
+   - lpi2c1_LPI2C_DRV_MasterDeinit -De-initialize the LPI2C master mode driver.
+   - lpi2c1_LPI2C_DRV_MasterGetBaudRate -Get the currently configured baud rate.
+   - lpi2c1_LPI2C_DRV_MasterSetBaudRate -Set the baud rate for any subsequent I2C communication.
+   - lpi2c1_LPI2C_DRV_MasterGetDefaultConfig -Gets the default configuration structure for master.
+   - lpi2c1_LPI2C_DRV_MasterSetSlaveAddr -Set the slave address for any subsequent I2C communication.
+   - lpi2c1_LPI2C_DRV_MasterSendData -Perform a non-blocking send transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_MasterSendDataBlocking -Perform a blocking send transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_MasterAbortTransferData -Abort a non-blocking I2C Master transmission or reception.
+   - lpi2c1_LPI2C_DRV_MasterReceiveData -Perform a non-blocking receive transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_MasterReceiveDataBlocking -Perform a blocking receive transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_MasterGetTransferStatus -Return the current status of the I2C master transfer.
+   - lpi2c1_LPI2C_DRV_MasterIRQHandler -Handle master operation when I2C interrupt occurs.
+   - lpi2c1_LPI2C_DRV_SlaveInit -Initialize the I2C slave mode driver.
+   - lpi2c1_LPI2C_DRV_SlaveDeinit -De-initialize the I2C slave mode driver.
+   - lpi2c1_LPI2C_DRV_SlaveSetTxBuffer -Provide a buffer for transmitting data.
+   - lpi2c1_LPI2C_DRV_SlaveSetRxBuffer -Provide a buffer for receiving data.
+   - lpi2c1_LPI2C_DRV_SlaveSendData -Perform a non-blocking send transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_SlaveSendDataBlocking -Perform a blocking send transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_SlaveReceiveData -Perform a non-blocking receive transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_SlaveReceiveDataBlocking -Perform a blocking receive transaction on the I2C bus.
+   - lpi2c1_LPI2C_DRV_SlaveGetTransferStatus -Return the current status of the I2C slave transfer.
+   - lpi2c1_LPI2C_DRV_SlaveAbortTransferData -Abort a non-blocking I2C Master transmission or reception.
+   - lpi2c1_LPI2C_DRV_SlaveGetDefaultConfig -Gets the default configuration structure for slave
+   - lpi2c1_LPI2C_DRV_SlaveIRQHandler -Handle slave operation when I2C interrupt occurs.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

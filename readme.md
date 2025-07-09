@@ -46,6 +46,8 @@
 
 [I2C从机指南](./Peripheral/I2C/I2C_Slave.md)
 
+[软件I2C](./Peripheral/I2C/I2C_flexio_i2c.md)
+
 ### SPI
 
 [SPI主机指南](./Peripheral/SPI/Spi_Master.md)

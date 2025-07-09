@@ -3,7 +3,7 @@
   <Header>
     <Name>S32KGuide</Name>
     <SavedBy>xfp57</SavedBy>
-    <ModificationStamp>17</ModificationStamp>
+    <ModificationStamp>21</ModificationStamp>
     <Date>2025-07-08</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>17</ProjectCompNumb>
+    <ProjectCompNumb>21</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -3191,7 +3191,7 @@
         <ItemSymbol>LPI2C0_lpi2c_scl_scl</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PTA3</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -3205,7 +3205,7 @@
         <ItemSymbol>LPI2C0_lpi2c_sda_sda</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PTA2</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -10974,7 +10974,7 @@
         <ItemSymbol>PeripheralClocksCount0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>15</Value>
+        <Value>17</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeripheralClocksGrp0</ItemSymbol>
@@ -11471,8 +11471,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral25_CLOCK_NAME0</ItemSymbol>
@@ -11505,7 +11505,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral25_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral0_CLK_Grp0</ItemSymbol>
@@ -11794,16 +11794,16 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>typeClockEnaDis</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>Enabled</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>Disabled</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral27_CLkEnable0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral27_CLOCK_NAME0</ItemSymbol>
@@ -11836,7 +11836,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral27_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral13_CLK_Grp0</ItemSymbol>
@@ -14691,7 +14691,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>FLEXIO_0_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTFC_0_CLOCK_GATE_0</ItemSymbol>
@@ -14715,7 +14715,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>LPI2C_0_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LPIT_0_CLOCK_GATE_0</ItemSymbol>
@@ -14797,7 +14797,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>FLEXIO0_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM0_CLK0</ItemSymbol>
@@ -14817,7 +14817,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>LPI2C0_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LPIT0_CLK0</ItemSymbol>
@@ -14946,7 +14946,7 @@
         <ItemSymbol>ProjectComponentsCount</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>9</Value>
+        <Value>10</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeripheralMaxIdValue</ItemSymbol>
@@ -14958,7 +14958,7 @@
         <ItemSymbol>ProjectComponentsCountChanged</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>0</Value>
+        <Value>2</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_ADC</ItemSymbol>
@@ -15072,7 +15072,7 @@
         <ItemSymbol>ModuleName_I2C</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>0</Value>
+        <Value>1</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_IIC</ItemSymbol>
@@ -17927,6 +17927,629 @@
       </ItemState>
     </Methods>
     <Events />
+  </Bean>
+  <Bean>
+    <Repository>file:/${ProcessorExpert_loc}/../../S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/tools/pex/Repositories/SDK_S32K1xx_15_Repository</Repository>
+    <ComponentUUID>com.freescale.processorexpert.ksdk.lpi2c</ComponentUUID>
+    <BeanType>lpi2c</BeanType>
+    <Name>lpi2c1</Name>
+    <CompNumb>20</CompNumb>
+    <CompEnabled>true</CompEnabled>
+    <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
+    <IconName>PHONE_LDD</IconName>
+    <UserFolderName />
+    <Comment lines_count="0" />
+    <Template />
+    <BeanVersion>SDK_S32K1xx_15</BeanVersion>
+    <LightErrorsIgnored>false</LightErrorsIgnored>
+    <Properties>
+      <ItemState>
+        <ItemSymbol>DeviceName</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>lpi2c1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PeriphDevice</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>LPI2C0</Value>
+        <SharedPrphMode>false</SharedPrphMode>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>CompVersion</ItemSymbol>
+        <Value>S32K144_SDK01</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>VersionSpecificItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Settings</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PropertiesItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MainConfigurationsGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg_group</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <ListItemCount>1</ListItemCount>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg_0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg_NAME0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>lpi2c1_MasterConfig0</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg_TYPE0</ItemSymbol>
+        <Value>lpi2c_master_user_config_t</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cMasterCfg_READONLY0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Address0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>0</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>is10bitAddr0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OperatingMode0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_STANDARD_MODE</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>BaudRate0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>0</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MasterTransferType0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_USING_INTERRUPTS</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MasterDMAChannel0</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>0U</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MasterCallback0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MasterCallbackParam0</ItemSymbol>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_group</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <ListItemCount>2</ListItemCount>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_NAME0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>lpi2c1_SlaveConfig0</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_TYPE0</ItemSymbol>
+        <Value>lpi2c_slave_user_config_t</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_READONLY0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveAddress0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>12</Value>
+        <Base>HEX</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveIs10bitAddr0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveListening0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveOperatingMode0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_STANDARD_MODE</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveTransferType0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_USING_INTERRUPTS</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveDMAChannel0</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>0U</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveCallback0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveCallbackParam0</ItemSymbol>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_NAME1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>lpi2c1_SlaveConfig1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_TYPE1</ItemSymbol>
+        <Value>lpi2c_slave_user_config_t</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2cSlaveCfg_READONLY1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveAddress1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>60</Value>
+        <Base>HEX</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveIs10bitAddr1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveListening1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveOperatingMode1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_STANDARD_MODE</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveTransferType1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>LPI2C_USING_INTERRUPTS</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveDMAChannel1</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>0U</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveCallback1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>SlaveCallbackParam1</ItemSymbol>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>clockMan1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>intMan1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link3</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>dmaController1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link2</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>osif1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>InhrItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>InhrGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+    </Properties>
+    <Methods>
+      <ItemState>
+        <ItemSymbol>SdkSpecificMethods</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>lpi2c_mastergroup</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterInit</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterInit</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterDeinit</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterDeinit</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterGetBaudRate</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterGetBaudRate</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterSetBaudRate</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterSetBaudRate</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterGetDefaultConfig</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterGetDefaultConfig</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterSetSlaveAddr</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterSetSlaveAddr</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterSendData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterSendData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterSendDataBlocking</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterSendDataBlocking</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterAbortTransferData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterAbortTransferData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterReceiveData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterReceiveData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterReceiveDataBlocking</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterReceiveDataBlocking</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterGetTransferStatus</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterGetTransferStatus</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_MasterIRQHandler</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_MasterIRQHandler</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveInit</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveInit</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveDeinit</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveDeinit</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveSetTxBuffer</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveSetTxBuffer</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveSetRxBuffer</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveSetRxBuffer</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveSendData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveSendData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveSendDataBlocking</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveSendDataBlocking</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveReceiveData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveReceiveData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveReceiveDataBlocking</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveReceiveDataBlocking</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveGetTransferStatus</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveGetTransferStatus</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveAbortTransferData</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveAbortTransferData</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveGetDefaultConfig</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveGetDefaultConfig</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LPI2C_DRV_SlaveIRQHandler</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>LPI2C_DRV_SlaveIRQHandler</UsrMethodName>
+      </ItemState>
+    </Methods>
+    <Events>
+      <ItemState>
+        <ItemSymbol>SdkSpecificEvents</ItemSymbol>
+        <ListItemCount>0</ListItemCount>
+      </ItemState>
+    </Events>
   </Bean>
   <ComponentInitializationSequence>
     <EmptySection_DummyValue />
