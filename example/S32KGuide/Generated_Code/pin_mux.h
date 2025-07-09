@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 10:52, # CodeGen: 14
+**     Date/Time   : 2025-07-09, 15:09, # CodeGen: 18
 **     Abstract    :
 **
 **     Settings    :
@@ -115,7 +115,7 @@
 **                Custom name                              : FTM0
 **                FTM0                                     : 
 **                  External Clock 0                       : <Automatic>
-**                  Channel 0                              : <Automatic>
+**                  Channel 0                              : PTB12
 **                  Direction                              : <Automatic>
 **                  Channel 1                              : <Automatic>
 **                  Direction                              : <Automatic>
@@ -167,7 +167,7 @@
 **                  Quadrature Decoder Phase B Input       : <Automatic>
 **                  Channel 0                              : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Channel 1                              : <Automatic>
+**                  Channel 1                              : PTD1
 **                  Direction                              : <Automatic>
 **                  Channel 2                              : <Automatic>
 **                  Direction                              : <Automatic>
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 10
+#define NUM_OF_CONFIGURED_PINS 12
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

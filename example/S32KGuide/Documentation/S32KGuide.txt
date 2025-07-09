@@ -205,6 +205,17 @@ Module "osif1"     (component osif)
    - osif1_OSIF_GetMilliseconds -Returns the number of miliseconds elapsed since starting the internal timer or starting the 
                 scheduler.
 
+Module "pwm_pal1"  (component pwm_pal)
+   - pwm_pal1_PWM_Init -Initialize PWM channels based on config parameter.
+   - pwm_pal1_PWM_UpdateDuty -Update duty cycle. The measurement unit for duty is clock ticks.
+   - pwm_pal1_PWM_UpdatePeriod -Update period for specific a specific channel. This function changes period for all channels 
+                which shares the timebase with targeted channel.
+   - pwm_pal1_PWM_OverwriteOutputChannels -This function change the output value for some channels. channelsMask select which 
+                channels will be overwrite, each bit filed representing one channel: 1 - channel is controlled by 
+                channelsValues, 0 - channel is controlled by pwm. channelsValues select output values to be write on 
+                corresponding channel.
+   - pwm_pal1_PWM_Deinit -Uninitialised PWM instance.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.
