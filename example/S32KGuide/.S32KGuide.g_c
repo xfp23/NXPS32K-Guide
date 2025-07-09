@@ -188,6 +188,60 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\ftm\ftm_hw_access.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\ftm\ftm_hw_access.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\ftm\ftm_mc_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\ftm\ftm_mc_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\ftm\ftm_common.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\ftm\ftm_common.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\ftm\ftm_hw_access.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\ftm\ftm_hw_access.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\inc\ftm_common.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\ftm_common.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\inc\ftm_mc_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\ftm_mc_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
         <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\devices\devassert.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
@@ -290,23 +344,25 @@
         <Line>Events</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="0" />
-      <GenAllModules lines_count="5">
+      <GenAllModules lines_count="6">
         <Line>adConv1</Line>
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>Events</Line>
+        <Line>flexTimer_mc1</Line>
         <Line>pin_mux</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="3">
+      <GenBeanModules lines_count="4">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
         <Line>adConv1</Line>
+        <Line>flexTimer_mc1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>8</ProjectModificationStamp>
+    <ProjectModificationStamp>10</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -314,8 +370,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1525186617</HeaderAge>
-    <CodeAge>1525180857</CodeAge>
+    <HeaderAge>1525237972</HeaderAge>
+    <CodeAge>1525237972</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -347,8 +403,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1525186167</HeaderAge>
-    <CodeAge>1525183502</CodeAge>
+    <HeaderAge>1525240229</HeaderAge>
+    <CodeAge>1525240229</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>25</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -394,8 +450,8 @@
     <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1525186617</HeaderAge>
-    <CodeAge>1525186617</CodeAge>
+    <HeaderAge>1525237972</HeaderAge>
+    <CodeAge>1525237972</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>6</GenNumMethods>
     <CLOCK_DRV_Init>true</CLOCK_DRV_Init>
@@ -498,47 +554,98 @@
     <ExtraFile1>SDK\platform\drivers\src\adc\adc_hw_access.h</ExtraFile1>
     <ExtraFile2>SDK\platform\drivers\src\adc\adc_driver.c</ExtraFile2>
   </ComponentID_5>
+  <ComponentID_7>
+    <Generated>true</Generated>
+    <GenCompName>flexTimer_mc1</GenCompName>
+    <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1525237972</HeaderAge>
+    <CodeAge>1525237972</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>18</GenNumMethods>
+    <FTM_DRV_Init>true</FTM_DRV_Init>
+    <FTM_DRV_Deinit>true</FTM_DRV_Deinit>
+    <FTM_DRV_GetDefaultConfig>true</FTM_DRV_GetDefaultConfig>
+    <FTM_DRV_InitCounter>true</FTM_DRV_InitCounter>
+    <FTM_DRV_CounterStart>true</FTM_DRV_CounterStart>
+    <FTM_DRV_CounterStop>true</FTM_DRV_CounterStop>
+    <FTM_DRV_CounterRead>true</FTM_DRV_CounterRead>
+    <FTM_MC_DRV_GetDefaultConfig>true</FTM_MC_DRV_GetDefaultConfig>
+    <FTM_DRV_MaskOutputChannels>true</FTM_DRV_MaskOutputChannels>
+    <FTM_DRV_SetInitialCounterValue>true</FTM_DRV_SetInitialCounterValue>
+    <FTM_DRV_SetHalfCycleReloadPoint>true</FTM_DRV_SetHalfCycleReloadPoint>
+    <FTM_DRV_SetSoftOutChnValue>true</FTM_DRV_SetSoftOutChnValue>
+    <FTM_DRV_SetSoftwareOutputChannelControl>true</FTM_DRV_SetSoftwareOutputChannelControl>
+    <FTM_DRV_SetInvertingControl>true</FTM_DRV_SetInvertingControl>
+    <FTM_DRV_SetModuloCounterValue>true</FTM_DRV_SetModuloCounterValue>
+    <FTM_DRV_SetSync>true</FTM_DRV_SetSync>
+    <FTM_DRV_GetFrequency>true</FTM_DRV_GetFrequency>
+    <FTM_DRV_ConvertFreqToPeriodTicks>true</FTM_DRV_ConvertFreqToPeriodTicks>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>1</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>IrqHandler</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>101</LineBeg>
+      <LineEnd>101</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>6</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\ftm_mc_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\inc\ftm_common.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\src\ftm\ftm_hw_access.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\ftm\ftm_common.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\ftm\ftm_mc_driver.c</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\ftm\ftm_hw_access.c</ExtraFile5>
+  </ComponentID_7>
   <UsedSrcFiles>
     <SrcFile0>Drivers\S32K\S32_SDK_S32K\clock_manager.drv=-1</SrcFile0>
-    <SrcFile1>Drivers\interrupt_manager.src=-1</SrcFile1>
-    <SrcFile2>Drivers\Common\Header.h=1316652645</SrcFile2>
-    <SrcFile3>Beans\_SDK\SdkOptions.chg=1331017399</SrcFile3>
-    <SrcFile4>Drivers\adc.src=-1</SrcFile4>
-    <SrcFile5>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1345390891</SrcFile5>
-    <SrcFile6>Drivers\Common\EBGNSupport\StringLib.prg=1316652646</SrcFile6>
-    <SrcFile7>Drivers\Common\Header.c=1316652645</SrcFile7>
-    <SrcFile8>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1345390891</SrcFile8>
-    <SrcFile9>Drivers\Common\S32KSettings.inc=1316652645</SrcFile9>
-    <SrcFile10>Drivers\S32K\PinSettings_S32K144_100.prg=-1</SrcFile10>
-    <SrcFile11>Drivers\S32K\S32K144_SDK01\adc_code.drv=-1</SrcFile11>
-    <SrcFile12>Drivers\Common\HeaderFreescale.C=1316652645</SrcFile12>
-    <SrcFile13>Drivers\Common\RTOSAdaptor.prg=1316652645</SrcFile13>
-    <SrcFile14>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile14>
-    <SrcFile15>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1316652646</SrcFile15>
-    <SrcFile16>Drivers\sw\PinSettings.drv=-1</SrcFile16>
-    <SrcFile17>Drivers\Common\Header.doxy=1345390891</SrcFile17>
-    <SrcFile18>Drivers\Common\GenInitConfigSequence.prg=1316652645</SrcFile18>
-    <SrcFile19>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile19>
-    <SrcFile20>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile20>
-    <SrcFile21>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1316652646</SrcFile21>
-    <SrcFile22>Drivers\PinSettings.src=-1</SrcFile22>
-    <SrcFile23>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile23>
-    <SrcFile24>Drivers\S32K\HAL_Port_Bridge_V2.prg=1316652646</SrcFile24>
-    <SrcFile25>Drivers\Common\InitReg32Block.prg=1316652645</SrcFile25>
-    <SrcFile26>Drivers\PEx_S32K.src=1316652645</SrcFile26>
-    <SrcFile27>Drivers\S32K\StaticSdk_S32K_V4.drv=1316652646</SrcFile27>
-    <SrcFile28>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile28>
-    <SrcFile29>Drivers\Common\ToolChain_Settings.prg=1316652645</SrcFile29>
-    <SrcFile30>Drivers\S32K\S32K144_SDK01\adc.drv=-1</SrcFile30>
-    <SrcFile31>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile31>
-    <SrcFile32>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile32>
-    <SrcFile33>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile33>
-    <SrcFile34>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile34>
-    <SrcFile35>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile35>
-    <SrcFile36>Drivers\Common\HeaderFreescale.h=1316652645</SrcFile36>
-    <SrcFile37>Drivers\Common\Header.end=1316652645</SrcFile37>
-    <SrcFile38>Drivers\clock_manager.src=-1</SrcFile38>
-    <SrcFile39>Drivers\Common\EBGNSupport\TimingLib.prg=1316652646</SrcFile39>
+    <SrcFile1>Drivers\S32K\S32K144_SDK01\ftm_mc.drv=-1</SrcFile1>
+    <SrcFile2>Drivers\interrupt_manager.src=-1</SrcFile2>
+    <SrcFile3>Drivers\Common\Header.h=1316652645</SrcFile3>
+    <SrcFile4>Beans\_SDK\SdkOptions.chg=1331017399</SrcFile4>
+    <SrcFile5>Drivers\adc.src=-1</SrcFile5>
+    <SrcFile6>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1345390891</SrcFile6>
+    <SrcFile7>Drivers\Common\EBGNSupport\StringLib.prg=1316652646</SrcFile7>
+    <SrcFile8>Drivers\Common\Header.c=1316652645</SrcFile8>
+    <SrcFile9>Drivers\S32K\S32K144_SDK01\ftm_mc_code.drv=-1</SrcFile9>
+    <SrcFile10>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1345390891</SrcFile10>
+    <SrcFile11>Drivers\Common\S32KSettings.inc=1316652645</SrcFile11>
+    <SrcFile12>Drivers\S32K\PinSettings_S32K144_100.prg=-1</SrcFile12>
+    <SrcFile13>Drivers\S32K\S32K144_SDK01\adc_code.drv=-1</SrcFile13>
+    <SrcFile14>Drivers\Common\HeaderFreescale.C=1316652645</SrcFile14>
+    <SrcFile15>Drivers\Common\RTOSAdaptor.prg=1316652645</SrcFile15>
+    <SrcFile16>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile16>
+    <SrcFile17>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1316652646</SrcFile17>
+    <SrcFile18>Drivers\sw\PinSettings.drv=-1</SrcFile18>
+    <SrcFile19>Drivers\Common\Header.doxy=1345390891</SrcFile19>
+    <SrcFile20>Drivers\Common\GenInitConfigSequence.prg=1316652645</SrcFile20>
+    <SrcFile21>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile21>
+    <SrcFile22>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile22>
+    <SrcFile23>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1316652646</SrcFile23>
+    <SrcFile24>Drivers\PinSettings.src=-1</SrcFile24>
+    <SrcFile25>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile25>
+    <SrcFile26>Drivers\S32K\HAL_Port_Bridge_V2.prg=1316652646</SrcFile26>
+    <SrcFile27>Drivers\Common\InitReg32Block.prg=1316652645</SrcFile27>
+    <SrcFile28>Drivers\PEx_S32K.src=1316652645</SrcFile28>
+    <SrcFile29>Drivers\S32K\StaticSdk_S32K_V4.drv=1316652646</SrcFile29>
+    <SrcFile30>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile30>
+    <SrcFile31>Drivers\Common\ToolChain_Settings.prg=1316652645</SrcFile31>
+    <SrcFile32>Drivers\S32K\S32K144_SDK01\adc.drv=-1</SrcFile32>
+    <SrcFile33>Drivers\ftm_mc.src=-1</SrcFile33>
+    <SrcFile34>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile34>
+    <SrcFile35>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile35>
+    <SrcFile36>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile36>
+    <SrcFile37>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile37>
+    <SrcFile38>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile38>
+    <SrcFile39>Drivers\Common\HeaderFreescale.h=1316652645</SrcFile39>
+    <SrcFile40>Drivers\Common\Header.end=1316652645</SrcFile40>
+    <SrcFile41>Drivers\clock_manager.src=-1</SrcFile41>
+    <SrcFile42>Drivers\Common\EBGNSupport\TimingLib.prg=1316652646</SrcFile42>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 

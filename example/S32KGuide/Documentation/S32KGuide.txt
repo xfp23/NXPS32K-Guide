@@ -97,6 +97,34 @@ Module "adConv1"   (component adc)
    - adConv1_ADC_DRV_ClearTriggerErrors -Clear all latch trigger error.
    - adConv1_ADC_DRV_GetTriggerErrorFlags -This function returns the trigger error flags bits of the ADC instance.
 
+Module "flexTimer_mc1" (component ftm_mc)
+   - flexTimer_mc1_FTM_DRV_Init -Initializes the FTM driver.
+   - flexTimer_mc1_FTM_DRV_Deinit -Shuts down the FTM driver.
+   - flexTimer_mc1_FTM_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc1_FTM_DRV_InitCounter -Initialize the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterStart -Starts the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterStop -Stops the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterRead -Reads back the current value of the FTM counter.
+   - flexTimer_mc1_FTM_MC_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc1_FTM_DRV_MaskOutputChannels -This function will mask the output of the channels and at match events will be 
+                ignored by the masked channels.
+   - flexTimer_mc1_FTM_DRV_SetInitialCounterValue -This function configure the initial counter value. The counter will get this 
+                value after an overflow event.
+   - flexTimer_mc1_FTM_DRV_SetHalfCycleReloadPoint -This function configure the value of the counter which will generates an 
+                reload point.
+   - flexTimer_mc1_FTM_DRV_SetSoftOutChnValue -This function will force the output value of a channel to a specific value. 
+                Before using this function it's mandatory to mask the match events using FTM_DRV_MaskOutputChannels and to 
+                enable software output control using FTM_DRV_SetSoftwareOutputChannelControl.
+   - flexTimer_mc1_FTM_DRV_SetSoftwareOutputChannelControl -This function will configure which output channel can be software 
+                controlled.
+   - flexTimer_mc1_FTM_DRV_SetInvertingControl -This function will configure if the second channel of a pair will be inverted 
+                or not.
+   - flexTimer_mc1_FTM_DRV_SetModuloCounterValue -This function configure the maximum counter value.
+   - flexTimer_mc1_FTM_DRV_SetSync -This function configures sync mechanism for some FTM registers ( MOD, CNINT, HCR, CnV, 
+                OUTMASK, INVCTRL, SWOCTRL).
+   - flexTimer_mc1_FTM_DRV_GetFrequency -Retrieves the frequency of the clock source feeding the FTM counter.
+   - flexTimer_mc1_FTM_DRV_ConvertFreqToPeriodTicks -This function is used to covert the given frequency to period in ticks.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

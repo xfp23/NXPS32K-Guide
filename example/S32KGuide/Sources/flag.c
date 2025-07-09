@@ -12,6 +12,8 @@ void UserGuide_gpio()
     state = PINS_DRV_ReadPins(PTE) & 1 << 12; // 读出整个引脚状态然后掩码查看指定引脚
 }
 
+
+ftm_state_t UserState_FTM0 = {0};
 /**
  * @brief 指南adc教程
  * @note 此函数code1 为ADC单次转换
@@ -30,3 +32,25 @@ void UserGuide_adc()
     
     /** user code2 end */
 }
+
+
+/**
+ * @brief 
+ * @note
+ * 
+ */
+void UserGuide_Timer()
+{
+    
+}
+
+/**
+ * @brief 定时器FTM0中断回调
+ * @note
+ */
+void Timer0_PeriodElapsedISR()
+{
+
+    FTM_DRV_ClearStatusFlags(INST_FLEXTIMER_MC1, FTM_TIME_OVER_FLOW_FLAG);  // 清除溢出标志位
+}
+

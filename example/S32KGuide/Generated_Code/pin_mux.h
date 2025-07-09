@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-08, 15:51, # CodeGen: 6
+**     Date/Time   : 2025-07-09, 10:13, # CodeGen: 12
 **     Abstract    :
 **
 **     Settings    :
@@ -1043,8 +1043,8 @@
 **                Pin Mux Field                            : Alternative 1 (GPIO).
 **                Lock Field                               : <Automatic>
 **                Pull Enable Field                        : Enabled
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
 **                Digital Filter Field                     : <Automatic>
 **              Pin 52: PTC10                              : 
 **                Custom name, Signal name                 : PTC10

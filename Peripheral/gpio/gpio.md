@@ -253,6 +253,10 @@ pins_channel_type_t PINS_DRV_ReadPins(const GPIO_Type * const base);
 **示例**：
 
 ```c
+
+PINS_DRV_WritePin(PTE, 12, 1);            // PTE12写入高电平
+PINS_DRV_WritePins(PTE, 1 << 12);         // 给端口输出按掩码写入
+
 if (PINS_DRV_ReadPins(PTC) & (1 << 13)) {
     // PTC13 为高电平
 }

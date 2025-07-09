@@ -3,7 +3,7 @@
   <Header>
     <Name>S32KGuide</Name>
     <SavedBy>xfp57</SavedBy>
-    <ModificationStamp>8</ModificationStamp>
+    <ModificationStamp>10</ModificationStamp>
     <Date>2025-07-08</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>7</ProjectCompNumb>
+    <ProjectCompNumb>8</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -7413,15 +7413,15 @@
         <ItemSymbol>PTC11_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Pull Up</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC11_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>High</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC11_DigitalFilter</ItemSymbol>
@@ -10967,7 +10967,7 @@
         <ItemSymbol>PeripheralClocksCount0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>7</Value>
+        <Value>11</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeripheralClocksGrp0</ItemSymbol>
@@ -11563,16 +11563,16 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>typeClockEnaDis</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>Enabled</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>Disabled</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral14_CLkEnable0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral14_CLOCK_NAME0</ItemSymbol>
@@ -11605,7 +11605,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral14_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral15_CLK_Grp0</ItemSymbol>
@@ -11619,16 +11619,16 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>typeClockEnaDis</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>Enabled</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>Disabled</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral15_CLkEnable0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral15_CLOCK_NAME0</ItemSymbol>
@@ -11661,7 +11661,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral15_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral16_CLK_Grp0</ItemSymbol>
@@ -11675,16 +11675,16 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>typeClockEnaDis</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>Enabled</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>Disabled</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral16_CLkEnable0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral16_CLOCK_NAME0</ItemSymbol>
@@ -11717,7 +11717,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral16_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral4_CLK_Grp0</ItemSymbol>
@@ -11731,16 +11731,16 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>typeClockEnaDis</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>Enabled</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>Disabled</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral4_CLkEnable0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>false</Value>
-        <Expanded>false</Expanded>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral4_CLOCK_NAME0</ItemSymbol>
@@ -11773,7 +11773,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral4_FUNC_CLK0</ItemSymbol>
-        <Value>0 Hz</Value>
+        <Value>8 MHz</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>Peripheral27_CLK_Grp0</ItemSymbol>
@@ -14692,19 +14692,19 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM_0_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM_1_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM_2_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM_3_CLOCK_GATE_0</ItemSymbol>
-        <Value>'off'</Value>
+        <Value>'on'</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LPI2C_0_CLOCK_GATE_0</ItemSymbol>
@@ -14794,19 +14794,19 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM0_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM1_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM2_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FTM3_CLK0</ItemSymbol>
-        <Value>0</Value>
+        <Value>8000000</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>LPI2C0_CLK0</ItemSymbol>
@@ -14939,7 +14939,7 @@
         <ItemSymbol>ProjectComponentsCount</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>4</Value>
+        <Value>5</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeripheralMaxIdValue</ItemSymbol>
@@ -14951,7 +14951,7 @@
         <ItemSymbol>ProjectComponentsCountChanged</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>0</Value>
+        <Value>1</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_ADC</ItemSymbol>
@@ -15059,7 +15059,7 @@
         <ItemSymbol>ModuleName_FTM</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>0</Value>
+        <Value>1</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_I2C</ItemSymbol>
@@ -15555,7 +15555,7 @@
         <ReadOnly>false</ReadOnly>
         <ListItemCount>1</ListItemCount>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>false</Expanded>
+        <Expanded>true</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>adcConvCfg_0</ItemSymbol>
@@ -16161,6 +16161,357 @@
         <LastSelection>true</LastSelection>
         <LastUserSel>always</LastUserSel>
         <UsrMethodName>ADC_DRV_GetTriggerErrorFlags</UsrMethodName>
+      </ItemState>
+    </Methods>
+    <Events />
+  </Bean>
+  <Bean>
+    <Repository>file:/${ProcessorExpert_loc}/../../S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/tools/pex/Repositories/SDK_S32K1xx_15_Repository</Repository>
+    <ComponentUUID>com.freescale.processorexpert.ksdk.ftm_mc</ComponentUUID>
+    <BeanType>ftm_mc</BeanType>
+    <Name>flexTimer_mc1</Name>
+    <CompNumb>7</CompNumb>
+    <CompEnabled>true</CompEnabled>
+    <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
+    <IconName>CLOCKS_LDD</IconName>
+    <UserFolderName />
+    <Comment lines_count="0" />
+    <Template />
+    <BeanVersion>SDK_S32K1xx_15</BeanVersion>
+    <LightErrorsIgnored>false</LightErrorsIgnored>
+    <Properties>
+      <ItemState>
+        <ItemSymbol>DeviceName</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>flexTimer_mc1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PeriphDevice</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>FTM0</Value>
+        <SharedPrphMode>false</SharedPrphMode>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>CompVersion</ItemSymbol>
+        <Value>S32K144_SDK01</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>VersionSpecificItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Settings</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PropertiesItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ftmInputChannelCfg_group</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ClockSetup</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Index>0</Index>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ClockSource</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>FTM_CLOCK_SOURCE_SYSTEMCLK</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>clockIndex</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>0</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PowerMode</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>RUN</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ClockPrescaler</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>5</Index>
+        <EnumSymbVal>FTM_CLOCK_DIVID_BY_32</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FtmGlobalCfg</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>BdmMode</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>FTM_BDM_MODE_00</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ChannelMode</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>FTM_MODE_UP_TIMER</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>TimOVFInt</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>InitialTigger</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ftmTimerCfg_group</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Index>0</Index>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>InitialCounterValue</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>0</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FinalCounterValue</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>1499</Value>
+        <Base>DEC</Base>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>intMan1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>clockMan1</Value>
+      </ItemState>
+    </Properties>
+    <Methods>
+      <ItemState>
+        <ItemSymbol>SdkSpecificMethods</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ftmgroup</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_Init</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_Init</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_Deinit</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_Deinit</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_GetDefaultConfig</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_GetDefaultConfig</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_InitCounter</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_InitCounter</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_CounterStart</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_CounterStart</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_CounterStop</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_CounterStop</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_CounterRead</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_CounterRead</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_MC_DRV_GetDefaultConfig</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_MC_DRV_GetDefaultConfig</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_MaskOutputChannels</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_MaskOutputChannels</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetInitialCounterValue</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetInitialCounterValue</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetHalfCycleReloadPoint</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetHalfCycleReloadPoint</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetSoftOutChnValue</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetSoftOutChnValue</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetSoftwareOutputChannelControl</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetSoftwareOutputChannelControl</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetInvertingControl</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetInvertingControl</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetModuloCounterValue</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetModuloCounterValue</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_SetSync</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_SetSync</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_GetFrequency</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_GetFrequency</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>FTM_DRV_ConvertFreqToPeriodTicks</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>FTM_DRV_ConvertFreqToPeriodTicks</UsrMethodName>
       </ItemState>
     </Methods>
     <Events />

@@ -47,9 +47,22 @@ int main(void)
     PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
   #endif
   /*** End of Processor Expert internal initialization.                    ***/
-PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr); // 初始化GPIO
+
+    /** 初始化GPIO */
+PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
+
+/** 初始化ADC */
 ADC_DRV_ConfigConverter(INST_ADCONV1, &adConv1_ConvConfig1); // 初始化ADC
 ADC_DRV_AutoCalibration(INST_ADCONV1); // 校准ADC
+
+/** 初始化定时器 */
+FTM_DRV_Init(INST_FLEXTIMER_MC1, &flexTimer_mc1_InitConfig,&UserState_FTM0/* ftm_state_t * state */);
+INT_SYS_InstallHandler(FTM0_Ovf_Reload_IRQn,&Timer0_PeriodElapsedISR,(isr_t*)0u);
+INT_SYS_EnableIRQ(FTM0_Ovf_Reload_IRQn);    // 使能timer0中断
+FTM_DRV_InitCounter(INST_FLEXTIMER_MC1, &flexTimer_mc1_TimerConfig);    // 初始化timer0的计数器
+FTM_DRV_CounterStart(INST_FLEXTIMER_MC1);   // 启动timer0的计数器
+
+
 
 while(1)
 {
