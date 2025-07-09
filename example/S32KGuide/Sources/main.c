@@ -83,7 +83,7 @@ int main(void)
   /** PWM init */
 PWM_Init(&pwm_pal1Instance, &pwm_pal1Configs);
 PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50/100));// 占空比根据周期计算
-PWM_Deinit(&pwm_pal1Instance); // 删除pwm驱动
+//PWM_Deinit(&pwm_pal1Instance); // 删除pwm驱动
 
 
   while (1)

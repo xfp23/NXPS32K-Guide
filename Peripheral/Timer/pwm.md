@@ -26,6 +26,7 @@
 | Duty               | 初始占空比    | 0\~Period之间的值，通常设置为Period的百分比，如750表示50%占空比 |
 | Polarity           | PWM极性    | Active high（高电平有效）、Active low（低电平有效）       |
 | Clock source       | 时钟源      | 选择定时器的时钟来源                                 |
+| Clock prescaler    | 分频系数    | 定时器分频
 | Deadtime prescaler | 死区时间分频   | 用于死区时间配置，适用于互补PWM                          |
 
 5. 调用初始化代码
