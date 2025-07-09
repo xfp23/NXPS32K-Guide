@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 10:13, # CodeGen: 12
+**     Date/Time   : 2025-07-09, 10:52, # CodeGen: 14
 **     Abstract    :
 **
 **     Settings    :
@@ -472,8 +472,8 @@
 **              Peripheral Type LPUART                     : 
 **                Custom name                              : LPUART0
 **                LPUART0                                  : 
-**                  Clear to Send                          : <Automatic>
-**                  Request to Send                        : <Automatic>
+**                  Clear to Send                          : PTA0
+**                  Request to Send                        : PTA1
 **                  Receive Data                           : <Automatic>
 **                  Transmit Data                          : <Automatic>
 **                  Direction                              : <Automatic>
@@ -1029,12 +1029,12 @@
 **              Pin 50: PTC12                              : 
 **                Custom name, Signal name                 : PTC12
 **                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
+**                Interrupt Configuration Field            : ISF flag and Interrupt on falling-edge.
 **                Pin Mux Field                            : <Automatic>
 **                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
 **                Digital Filter Field                     : <Automatic>
 **              Pin 51: PTC11                              : 
 **                Custom name, Signal name                 : PTC11
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 8
+#define NUM_OF_CONFIGURED_PINS 10
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];
