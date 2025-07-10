@@ -6,11 +6,13 @@
 
 ## 环境
 
-[环境搭建指南](./environment/env.md)
+[S32DS环境搭建指南](./environment/env.md)
 
 [添加源文件](./environment/addSource.md)
 
 [添加自定义组件](./environment/CustomComponents.md)
+
+[vscode环境搭建指南](./environment/vsenv.md)
 
 ## 外设API
 
@@ -60,14 +62,20 @@
 
 ### CAN
 
+[CAN总线介绍](./Peripheral/CAN//CAN_Illus.md)
+
 [CAN](./Peripheral/CAN/CAN.md)
+
+[CANFD](./Peripheral/CANFD/CANFD.md)
 
 
 ### LIN
 
+[LIN总线介绍](./Peripheral/LIN/lin_Illus.md)
+
 [LIN](./Peripheral/LIN/lin.md)
 
-## 系统API
+### 系统API
 
 [时钟配置](./System/Colock/config.md)
 
