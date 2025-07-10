@@ -2,7 +2,7 @@
 
 ## 版权
 
-© 2025 . 未经许可不得复制、修改或分发。 此文献为 [小风的藏书阁](https://t.me/xfp2333) 所有。
+© 2025 . 未经许可不得复制、修改或分发。 此文献为 [小風的藏書閣](https://t.me/xfp2333) 所有。
 
 ## 环境
 
@@ -42,11 +42,15 @@
 
 ### I2C
 
-[I2C主机指南](./Peripheral/I2C/I2C_Master.md)
+[I2C_pal主机指南](./Peripheral/I2C/I2C_Master_pal.md)
 
-[I2C从机指南](./Peripheral/I2C/I2C_Slave.md)
+[I2C_pal从机指南](./Peripheral/I2C/I2C_Slave_pal.md)
 
 [软件I2C](./Peripheral/I2C/I2C_flexio_i2c.md)
+
+[I2C_lp主机指南](./Peripheral/I2C/I2C_Master_lp.md)
+
+[I2C_lp从机指南](./Peripheral/I2C/I2C_Slave_lp.md)
 
 ### SPI
 
