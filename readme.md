@@ -32,7 +32,9 @@
 
 [定时器周期性中断](./Peripheral/Timer/Timing.md)
 
-[生成PWM](./Peripheral/Timer/pwm.md)
+[`pwm_pal`生成PWM](./Peripheral/Timer/pwm.md)
+
+[`ftm_pwm`生成PWM](./Peripheral/Timer/ftmPwm.md)
 
 [定时器捕获](./Peripheral/Timer/capture.md)
 
