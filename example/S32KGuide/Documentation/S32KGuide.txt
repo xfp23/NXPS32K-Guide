@@ -216,6 +216,31 @@ Module "pwm_pal1"  (component pwm_pal)
                 corresponding channel.
    - pwm_pal1_PWM_Deinit -Uninitialised PWM instance.
 
+Module "i2c1"      (component i2c_pal)
+   - i2c1_I2C_MasterInit -Initializes the I2C module in master mode.
+   - i2c1_I2C_MasterSendData -Initializes a non-blocking master transfer.
+   - i2c1_I2C_MasterSendDataBlocking -Initializes a blocking master transfer.
+   - i2c1_I2C_MasterReceiveData -Initializes a non-blocking master receive transfer.
+   - i2c1_I2C_MasterReceiveDataBlocking -Initializes a blocking master transfer.
+   - i2c1_I2C_MasterSetSlaveAddress -Initializes a blocking slave transfer.
+   - i2c1_I2C_MasterGetTransferStatus -Return the current status of the I2C master transfer.
+   - i2c1_I2C_MasterSetBaudRate -Set the baudrate of the I2C communication.
+   - i2c1_I2C_MasterGetBaudRate -Get the baudrate of the I2C communication.
+   - i2c1_I2C_MasterAbortTransfer -Abort a non-blocking I2C Master transmission or reception.
+   - i2c1_I2C_MasterDeinit -De-initialized the I2C master module
+   - i2c1_I2C_GetDefaultMasterConfig -Gets the default configuration structure for master.
+   - i2c1_I2C_GetDefaultSlaveConfig -Gets the default configuration structure for slave.
+   - i2c1_I2C_SlaveInit -Initializes the i2c slave module.
+   - i2c1_I2C_SlaveSendData -Performs a non-blocking send transaction
+   - i2c1_I2C_SlaveSendDataBlocking -Performs a blocking send transaction
+   - i2c1_I2C_SlaveReceiveData -Performs a non-blocking receive transaction
+   - i2c1_I2C_SlaveReceiveDataBlocking -Performs a non-blocking receive transaction
+   - i2c1_I2C_SlaveSetRxBuffer -Provide a buffer for receiving data.
+   - i2c1_I2C_SlaveSetTxBuffer -Provide a buffer for data to be transferred.
+   - i2c1_I2C_SlaveDeinit -De-initializes the i2c slave module.
+   - i2c1_I2C_SlaveGetTransferStatus -Return the current status of the I2C slave transfer.
+   - i2c1_I2C_SlaveAbortTransfer -Abort a non-blocking I2C Master transmission or reception.
+
 Module "lpi2c1"    (component lpi2c)
    - lpi2c1_LPI2C_DRV_MasterInit -Initialize the LPI2C master mode driver.
    - lpi2c1_LPI2C_DRV_MasterDeinit -De-initialize the LPI2C master mode driver.
@@ -242,6 +267,56 @@ Module "lpi2c1"    (component lpi2c)
    - lpi2c1_LPI2C_DRV_SlaveAbortTransferData -Abort a non-blocking I2C Master transmission or reception.
    - lpi2c1_LPI2C_DRV_SlaveGetDefaultConfig -Gets the default configuration structure for slave
    - lpi2c1_LPI2C_DRV_SlaveIRQHandler -Handle slave operation when I2C interrupt occurs.
+
+Module "lpspiCom1" (component lpspi)
+   - lpspiCom1_LPSPI_DRV_MasterGetDefaultConfig -Return default configuration for SPI master.
+   - lpspiCom1_LPSPI_DRV_MasterInit -Initializes a LPSPI instance for interrupt driven master mode operation.
+   - lpspiCom1_LPSPI_DRV_MasterDeinit -Shuts down a LPSPI instance.
+   - lpspiCom1_LPSPI_DRV_MasterSetDelay -Configures the LPSPI master mode bus timing delay options.
+   - lpspiCom1_LPSPI_DRV_MasterConfigureBus -Configures the LPSPI port physical parameters to access a device on the bus when 
+                the LSPI instance is configured for interrupt operation.
+   - lpspiCom1_LPSPI_DRV_SetPcs -Select the chip to communicate with.
+   - lpspiCom1_LPSPI_DRV_MasterTransferBlocking -Performs an interrupt driven blocking SPI master mode transfer.
+   - lpspiCom1_LPSPI_DRV_MasterTransfer -Performs an interrupt driven non-blocking SPI master mode transfer.
+   - lpspiCom1_LPSPI_DRV_MasterGetTransferStatus -Returns whether the previous interrupt driven transfer is completed.
+   - lpspiCom1_LPSPI_DRV_MasterAbortTransfer -Terminates an interrupt driven asynchronous transfer early.
+   - lpspiCom1_LPSPI_DRV_SlaveGetDefaultConfig -Return default configuration for SPI master.
+   - lpspiCom1_LPSPI_DRV_SlaveDeinit -Shuts down an LPSPI instance interrupt mechanism.
+   - lpspiCom1_LPSPI_DRV_SlaveTransferBlocking -Transfers data on LPSPI bus using a blocking call.
+   - lpspiCom1_LPSPI_DRV_SlaveTransfer -Starts the transfer data on LPSPI bus using a non-blocking call.
+   - lpspiCom1_LPSPI_DRV_SlaveAbortTransfer -Aborts the transfer that started by a non-blocking call transfer function.
+   - lpspiCom1_LPSPI_DRV_SlaveGetTransferStatus -Returns whether the previous transfer is finished.
+
+Module "spi1"      (component spi_pal)
+   - spi1_SPI_MasterInit -Initializes the SPI module in master mode.
+   - spi1_SPI_SlaveInit -Initializes the SPI module in slave mode.
+   - spi1_SPI_SetSS -Update the SS.
+   - spi1_SPI_MasterTransfer -Initializes a non-blocking master transfer.
+   - spi1_SPI_MasterTransferBlocking -Initializes a blocking master transfer.
+   - spi1_SPI_SlaveTransfer -Initializes a non-blocking slave transfer.
+   - spi1_SPI_SlaveTransferBlocking -Initializes a blocking slave transfer.
+   - spi1_SPI_GetStatus -Gets the status of the last transfer.
+   - spi1_SPI_GetDefaultMasterConfig -Gets the default configuration structure for master.
+   - spi1_SPI_GetDefaultSlaveConfig -Gets the default configuration structure for slave.
+   - spi1_SPI_MasterDeinit -De-initializes the spi master module.
+   - spi1_SPI_SlaveDeinit -De-initializes the spi slave module.
+
+Module "watchdog1" (component wdog)
+   - watchdog1_WDOG_DRV_Init -Initializes the WDOG driver.
+   - watchdog1_WDOG_DRV_Deinit -De-initializes the WDOG driver.
+   - watchdog1_WDOG_DRV_GetConfig -Gets the current configuration of the WDOG.
+   - watchdog1_WDOG_DRV_GetDefaultConfig -Gets default configuration of the WDOG.
+   - watchdog1_WDOG_DRV_SetInt -Enables/Disables the WDOG timeout interrupt and sets a function to be called when a timeout 
+                interrupt is received, before reset.
+   - watchdog1_WDOG_DRV_ClearIntFlag -Clear interrupt flag of the WDOG.
+   - watchdog1_WDOG_DRV_Trigger -Refreshes the WDOG counter.
+   - watchdog1_WDOG_DRV_GetCounter -Gets the value of the WDOG counter.
+   - watchdog1_WDOG_DRV_SetWindow -Set window mode and window value of the WDOG.
+   - watchdog1_WDOG_DRV_SetMode -Sets the mode operation of the WDOG.
+   - watchdog1_WDOG_DRV_SetTimeout -Sets the value of the WDOG timeout.
+   - watchdog1_WDOG_DRV_SetTestMode -This function changes the test mode of the WDOG. If the WDOG is tested in mode, software 
+                should set this field to 0x01U in order to indicate that the WDOG is functioning normally.
+   - watchdog1_WDOG_DRV_GetTestMode -This function verifies the test mode of the WDOG.
 
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 

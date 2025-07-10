@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 16:38, # CodeGen: 22
+**     Date/Time   : 2025-07-10, 10:06, # CodeGen: 26
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -82,8 +82,8 @@
  */
 
 
-const lpi2c_master_user_config_t lpi2c1_MasterConfig0 = {
-  .slaveAddress = 0U,
+lpi2c_master_user_config_t lpi2c1_MasterConfig0 = {
+  .slaveAddress = 12U,
   .is10bitAddr = false,
   .operatingMode = LPI2C_STANDARD_MODE,
   .baudRate = 0U,
@@ -94,18 +94,7 @@ const lpi2c_master_user_config_t lpi2c1_MasterConfig0 = {
 };
 
 const lpi2c_slave_user_config_t lpi2c1_SlaveConfig0 = {
-  .slaveAddress = 12U,
-  .is10bitAddr = false,
-  .slaveListening = true,
-  .operatingMode = LPI2C_STANDARD_MODE,
-  .transferType = LPI2C_USING_INTERRUPTS,
-  .dmaChannel = 0U,
-  .slaveCallback = NULL,
-  .callbackParam = NULL,
-};
-
-const lpi2c_slave_user_config_t lpi2c1_SlaveConfig1 = {
-  .slaveAddress = 60U,
+  .slaveAddress = 0U,
   .is10bitAddr = false,
   .slaveListening = true,
   .operatingMode = LPI2C_STANDARD_MODE,

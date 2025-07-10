@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 10:52, # CodeGen: 14
+**     Date/Time   : 2025-07-10, 10:42, # CodeGen: 27
 **     Abstract    :
 **
 **     Contents    :
@@ -82,7 +82,7 @@
 extern lpuart_state_t lpuart1_State;
 
 /*! @brief Configuration declaration */
-extern const lpuart_user_config_t lpuart1_InitConfig0;
+extern lpuart_user_config_t lpuart1_InitConfig0;
 
 #endif  /* ifndef lpuart1_H */
 /*!

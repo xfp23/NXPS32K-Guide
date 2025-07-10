@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 13:19, # CodeGen: 16
+**     Date/Time   : 2025-07-10, 10:42, # CodeGen: 27
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -54,15 +54,21 @@ edma_chn_state_t dmaController1Chn0_State;
 
 edma_chn_state_t dmaController1Chn1_State;
 
+edma_chn_state_t dmaController1Chn2_State;
+
+edma_chn_state_t dmaController1Chn3_State;
+
 edma_chn_state_t * const edmaChnStateArray[] = {
     &dmaController1Chn0_State,
-    &dmaController1Chn1_State
+    &dmaController1Chn1_State,
+    &dmaController1Chn2_State,
+    &dmaController1Chn3_State
 };
 
 edma_channel_config_t dmaController1Chn0_Config = {
     .channelPriority = EDMA_CHN_DEFAULT_PRIORITY,
     .virtChnConfig = EDMA_CHN0_NUMBER,
-    .source = EDMA_REQ_LPUART0_RX,
+    .source = EDMA_REQ_LPUART0_TX,
     .callback = NULL,
     .callbackParam = NULL,
     .enableTrigger = false
@@ -75,12 +81,34 @@ edma_channel_config_t dmaController1Chn1_Config = {
     .callbackParam = NULL,
     .enableTrigger = false
 };
+edma_channel_config_t dmaController1Chn2_Config = {
+    .channelPriority = EDMA_CHN_DEFAULT_PRIORITY,
+    .virtChnConfig = EDMA_CHN2_NUMBER,
+    .source = EDMA_REQ_LPSPI0_TX,
+    .callback = NULL,
+    .callbackParam = NULL,
+    .enableTrigger = false
+};
+edma_channel_config_t dmaController1Chn3_Config = {
+    .channelPriority = EDMA_CHN_DEFAULT_PRIORITY,
+    .virtChnConfig = EDMA_CHN3_NUMBER,
+    .source = EDMA_REQ_LPSPI0_RX,
+    .callback = NULL,
+    .callbackParam = NULL,
+    .enableTrigger = false
+};
 const edma_channel_config_t * const edmaChnConfigArray[] = {
     &dmaController1Chn0_Config,
-    &dmaController1Chn1_Config
+    &dmaController1Chn1_Config,
+    &dmaController1Chn2_Config,
+    &dmaController1Chn3_Config
 };
 
 const edma_user_config_t dmaController1_InitConfig0 = {
+    .chnArbitration = EDMA_ARBITRATION_FIXED_PRIORITY,
+    .haltOnError = false
+};
+const edma_user_config_t dmaController1_InitConfig1 = {
     .chnArbitration = EDMA_ARBITRATION_FIXED_PRIORITY,
     .haltOnError = false
 };

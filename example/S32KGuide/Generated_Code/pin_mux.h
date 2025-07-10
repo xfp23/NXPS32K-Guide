@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 16:29, # CodeGen: 20
+**     Date/Time   : 2025-07-10, 11:11, # CodeGen: 29
 **     Abstract    :
 **
 **     Settings    :
@@ -417,20 +417,20 @@
 **              Peripheral Type LPSPI                      : 
 **                Custom name                              : LPSPI0
 **                LPSPI0                                   : 
-**                  Peripheral Chip Select 0               : <Automatic>
+**                  Peripheral Chip Select 0               : PTB0
 **                  Direction                              : <Automatic>
-**                  Peripheral Chip Select 1               : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Peripheral Chip Select 1               : PTB5
+**                  Direction                              : Output
 **                  Peripheral Chip Select 2               : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Peripheral Chip Select 3               : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Serial Clock                           : <Automatic>
-**                  Direction                              : <Automatic>
-**                  Serial Data Input                      : <Automatic>
-**                  Direction                              : <Automatic>
-**                  Serial Data Output                     : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Serial Clock                           : PTD15
+**                  Direction                              : Output
+**                  Serial Data Input                      : PTB3
+**                  Direction                              : Input
+**                  Serial Data Output                     : PTB1
+**                  Direction                              : Output
 **                Custom name                              : LPSPI1
 **                LPSPI1                                   : 
 **                  Peripheral Chip Select 0               : <Automatic>
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 14
+#define NUM_OF_CONFIGURED_PINS 19
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

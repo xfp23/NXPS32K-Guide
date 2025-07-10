@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 16:38, # CodeGen: 22
+**     Date/Time   : 2025-07-10, 10:06, # CodeGen: 26
 **     Contents    :
 **         LPI2C_DRV_MasterInit                - status_t LPI2C_DRV_MasterInit(uint32_t instance,const...
 **         LPI2C_DRV_MasterDeinit              - status_t LPI2C_DRV_MasterDeinit(uint32_t instance);
@@ -97,11 +97,10 @@
 #define INST_LPI2C1 0
 
 /*! @brief Master configuration declaration */
-extern const lpi2c_master_user_config_t lpi2c1_MasterConfig0;
+extern lpi2c_master_user_config_t lpi2c1_MasterConfig0;
     
 /*! @brief Slave configuration declaration */
 extern const lpi2c_slave_user_config_t lpi2c1_SlaveConfig0;
-extern const lpi2c_slave_user_config_t lpi2c1_SlaveConfig1;
     
 
 

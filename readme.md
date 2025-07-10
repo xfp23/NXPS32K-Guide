@@ -48,13 +48,13 @@
 
 [软件I2C](./Peripheral/I2C/I2C_flexio_i2c.md)
 
-[I2C_lp主机指南](./Peripheral/I2C/I2C_Master_lp.md)
+[lpI2C主机指南](./Peripheral/I2C/I2C_Master_lp.md)
 
-[I2C_lp从机指南](./Peripheral/I2C/I2C_Slave_lp.md)
+[lpI2C从机指南](./Peripheral/I2C/I2C_Slave_lp.md)
 
 ### SPI
 
-[SPI主机指南](./Peripheral/SPI/Spi_Master.md)
+[硬件lpSPI主机指南](./Peripheral/SPI/Spi_Masterlp.md)
 
 [SPI从机指南](./Peripheral/SPI/Spi_Slave.md)
 

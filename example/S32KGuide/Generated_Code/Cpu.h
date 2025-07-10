@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K14XRM Rev. 2, 02/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-09, 16:38, # CodeGen: 22
+**     Date/Time   : 2025-07-10, 11:19, # CodeGen: 30
 **     Abstract    :
 **
 **     Settings    :
@@ -65,7 +65,13 @@
 #include "osif.h"
 #include "lpuart_driver.h"
 #include "pwm_pal.h"
+#include "i2c_pal.h"
 #include "lpi2c_driver.h"
+#include "lpspi_master_driver.h"
+#include "lpspi_slave_driver.h"
+#include "lpspi_shared_function.h"
+#include "spi_pal.h"
+#include "wdog_driver.h"
 #include "system_S32K144.h"
 
 /* Including needed modules to compile this module/procedure */
@@ -76,7 +82,11 @@
 #include "lpuart1.h"
 #include "dmaController1.h"
 #include "pwm_pal1.h"
+#include "i2c1.h"
 #include "lpi2c1.h"
+#include "lpspiCom1.h"
+#include "spi1.h"
+#include "watchdog1.h"
 
 #ifdef __cplusplus
 extern "C" {

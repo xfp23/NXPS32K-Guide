@@ -158,7 +158,49 @@
     <Enabled v="Y" />
     <Properties>
       <Component_name v="i2c1" />
+      <Device v="FLEXIO" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="lpi2c1" type="lpi2c">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="lpi2c1" />
       <Device v="LPI2C0" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="lpspiCom1" type="lpspi">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="lpspiCom1" />
+      <Device v="LPSPI0" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="spi1" type="spi_pal">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="spi1" />
+      <Device v="LPSPI1" />
       <Component_version v="S32K144_SDK01" />
     </Properties>
     <Methods>

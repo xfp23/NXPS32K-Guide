@@ -14,7 +14,6 @@ void UserGuide_gpio()
     state = PINS_DRV_ReadPins(PTE) & 1 << 12; // 读出整个引脚状态然后掩码查看指定引脚
 }
 
-
 ftm_state_t UserState_FTM0 = {0};
 /**
  * @brief 指南adc教程
@@ -31,19 +30,17 @@ void UserGuide_adc()
     /** user code1 end */
 
     /** user code2 begin */
-    
+
     /** user code2 end */
 }
 
-
 /**
- * @brief 
+ * @brief
  * @note
- * 
+ *
  */
 void UserGuide_Timer()
 {
-    
 }
 
 /**
@@ -53,7 +50,7 @@ void UserGuide_Timer()
 void Timer0_PeriodElapsedISR()
 {
 
-    FTM_DRV_ClearStatusFlags(INST_FLEXTIMER_MC1, FTM_TIME_OVER_FLOW_FLAG);  // 清除溢出标志位
+    FTM_DRV_ClearStatusFlags(INST_FLEXTIMER_MC1, FTM_TIME_OVER_FLOW_FLAG); // 清除溢出标志位
 }
 
 /**
@@ -61,43 +58,42 @@ void Timer0_PeriodElapsedISR()
  */
 void PTC_EXT_IRQ()
 {
-	uint32_t bit_mask = PINS_DRV_GetPortIntFlag(PORTC) & ((1 << 12) | (1 << 13)); // 获取中断触发引脚
+    uint32_t bit_mask = PINS_DRV_GetPortIntFlag(PORTC) & ((1 << 12) | (1 << 13)); // 获取中断触发引脚
 
-	if(bit_mask & (1 << 12))
-	{
-		/** User code begin */
+    if (bit_mask & (1 << 12))
+    {
+        /** User code begin */
 
-		/** User code end */
-	}
+        /** User code end */
+    }
 
-	if(bit_mask & (1 << 11))
-	{
+    if (bit_mask & (1 << 11))
+    {
+    }
 
-	}
-
-	/** 清除中断标志 */
-	PINS_DRV_ClearPortIntFlagCmd(PORTC);
+    /** 清除中断标志 */
+    PINS_DRV_ClearPortIntFlagCmd(PORTC);
 }
 
 /**
  * @brief 用户串口发送函数
- * 
- * @param fmt 
- * @param ... 
+ *
+ * @param fmt
+ * @param ...
  */
-void User_printf(const char* fmt, ...)
+void User_printf(const char *fmt, ...)
 {
     char buffer[256] = {0};
     uint32_t bytesRemaining;
     va_list ap;
     va_start(ap, fmt);
-    vsprintf((char*)buffer, fmt, ap);
+    vsprintf((char *)buffer, fmt, ap);
     va_end(ap);
 
     LPUART_DRV_SendData(INST_LPUART1, (uint8_t *)buffer, strlen(buffer)); // 发送
 
     /* 添加超时机制 */
-    uint32_t timeoutMs = 100; // 最大等待 100ms
+    uint32_t timeoutMs = 100;                    // 最大等待 100ms
     uint32_t startTime = OSIF_GetMilliseconds(); // 获取当前时间戳
 
     while (LPUART_DRV_GetTransmitStatus(INST_LPUART1, &bytesRemaining) != STATUS_SUCCESS)
@@ -112,11 +108,11 @@ void User_printf(const char* fmt, ...)
 
 /**
  * @brief 串口接收中断回调函数
- * @note 
+ * @note
  */
-void UART_RX_ISR (void *driverState, uart_event_t event, void *userData)
- {
-	uint32_t inst = (uint32_t)userData;
+void UART_RX_ISR(void *driverState, uart_event_t event, void *userData)
+{
+    uint32_t inst = (uint32_t)userData;
 #if 0
     static uint32_t bytesRemaining = 0;
     static uint8_t buffer[256] = {0};
@@ -183,7 +179,6 @@ void UART_RX_ISR (void *driverState, uart_event_t event, void *userData)
 #endif
 }
 
-
 /**
  * @brief DMA接收回调
  */
@@ -191,21 +186,19 @@ void UART_RX_DMA_Callback(void *driverState, uart_event_t event, void *userData)
 {
     uint32_t inst = (uint32_t)userData;
     if (inst == INST_LPUART1)
-	{
-	    if (event == UART_EVENT_END_TRANSFER)
-	    {
-	        // DMA接收完成
-	        UserCommon.flag.isUartReceive = ON;
+    {
+        if (event == UART_EVENT_END_TRANSFER)
+        {
+            // DMA接收完成
+            UserCommon.flag.isUartReceive = ON;
 
-	        // 重新启动接收（实现循环）
-
-	    }
-	    else if (event == UART_EVENT_ERROR)
-	    {
-	        // 错误处理
-	    }
-	}
-
+            // 重新启动接收（实现循环）
+        }
+        else if (event == UART_EVENT_ERROR)
+        {
+            // 错误处理
+        }
+    }
 }
 
 lpi2c_master_state_t lpi2c1_MasterState;
@@ -215,21 +208,23 @@ lpi2c_master_state_t lpi2c1_MasterState;
 
 /**
  * @brief I2C 写入多个字节到当前已配置的从设备地址
- * 
+ *
  * @param buffer 要发送的数据指针
  * @param size   数据长度
  */
-void UserTools_I2C_Writebytes(uint8_t* buffer, size_t size)
+void UserTools_I2C_Writebytes(uint8_t *buffer, size_t size)
 {
-    if (buffer == NULL || size == 0) return;
+    if (buffer == NULL || size == 0)
+        return;
 
     status_t status = LPI2C_DRV_MasterSendDataBlocking(
-        INST_LPI2C1,          // I2C实例编号
-        buffer,               // 要发送的数据
-        size,                 // 数据长度
-        SEND_STOP_AFTER_TX,  // 是否发送 STOP
-        I2C_TIMEOUT_MS        // 超时时间
+        INST_LPI2C1,        // I2C实例编号
+        buffer,             // 要发送的数据
+        size,               // 数据长度
+        SEND_STOP_AFTER_TX, // 是否发送 STOP
+        I2C_TIMEOUT_MS      // 超时时间
     );
+    I2C_MasterSendDataBlocking(&i2c1_instance, buffer, size, true, 100);
 
     if (status != STATUS_SUCCESS)
     {
@@ -239,20 +234,21 @@ void UserTools_I2C_Writebytes(uint8_t* buffer, size_t size)
 
 /**
  * @brief 从当前已配置的从设备地址读取多个字节
- * 
+ *
  * @param buffer 接收数据缓存区指针
  * @param size   要读取的字节数
  */
 void UserTools_I2C_Readbytes(uint8_t *buffer, size_t size)
 {
-    if (buffer == NULL || size == 0) return;
+    if (buffer == NULL || size == 0)
+        return;
 
     status_t status = LPI2C_DRV_MasterReceiveDataBlocking(
-        INST_LPI2C1,          // I2C实例编号
-        buffer,               // 接收缓冲区
-        size,                 // 要接收的数据字节数
-        SEND_STOP_AFTER_TX,  // 是否发送 STOP
-        I2C_TIMEOUT_MS        // 超时时间
+        INST_LPI2C1,        // I2C实例编号
+        buffer,             // 接收缓冲区
+        size,               // 要接收的数据字节数
+        SEND_STOP_AFTER_TX, // 是否发送 STOP
+        I2C_TIMEOUT_MS      // 超时时间
     );
 
     if (status != STATUS_SUCCESS)
@@ -261,3 +257,75 @@ void UserTools_I2C_Readbytes(uint8_t *buffer, size_t size)
     }
 }
 
+void UserTools_Spi_Writebytes(uint8_t *buffer, size_t size)
+{
+    if (buffer == NULL || size == 0)
+        return;
+
+    status_t status = LPSPI_DRV_MasterTransfer( // 非阻塞发送
+        LPSPICOM1,                              // spi 实例编号
+        buffer,                                 // 发送的buffer
+        NULL,                                   // 不接收传NULL
+        size                                    // 大小
+    );
+#if 0
+   status_t status = SPI_MasterTransferBlocking( // 阻塞发送
+        &spi1Instance, // 实例
+        buffer, // buffer
+        NULL, // 不接收传NULL
+        size, // 大小
+        100 // 超时时间
+    );
+#endif
+}
+
+void UserTools_Spi_Readbytes(uint8_t *buffer, size_t size)
+{
+    if (buffer == NULL || size == 0)
+        return;
+
+    status_t status = LPSPI_DRV_MasterTransfer( // 非阻塞接收
+        LPSPICOM1,                              // spi 实例编号
+        NULL,                                   // 不发送传NULL
+        buffer,                                 // 接收buffer
+        size                                    // 大小
+    );
+#if 0
+   status_t status = SPI_MasterTransferBlocking( // 阻塞接收
+        &spi1Instance, // 实例
+        NULL, // 不发送传NULL
+        buffer, // 接收buffer
+        size, // 大小
+        100 // 超时时间
+    );
+#endif
+}
+
+void UserTools_Spi_WriteRead_bytes(uint8_t *txBuffer, size_t tx_size, uint8_t *rxBuffer, size_t rx_size)
+{
+    if ((txBuffer == NULL && tx_size > 0) || (rxBuffer == NULL && rx_size > 0))
+        return; // 参数校验
+
+    size_t transferSize = (tx_size > rx_size) ? tx_size : rx_size;
+
+    status_t status = LPSPI_DRV_MasterTransfer(
+        LPSPICOM1,   // SPI实例编号
+        txBuffer,    // 发送buffer，如果没有发送数据，可以传NULL，但tx_size不能大于0
+        rxBuffer,    // 接收buffer，如果不需要接收，传NULL
+        transferSize // 传输总字节数，发送接收同时进行，长度取最大值
+    );
+
+#if 0
+   status_t status = SPI_MasterTransferBlocking( // 阻塞发送
+        &spi1Instance, // 实例
+        txBuffer, // 发送buffer
+        rxBuffer, // 接收buffer
+        transferSize, // 大小
+        100 // 超时时间
+    );
+#endif
+    if (status != STATUS_SUCCESS)
+    {
+        // 错误处理
+    }
+}

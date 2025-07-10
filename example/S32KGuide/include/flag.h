@@ -22,8 +22,11 @@ extern "C"
 #endif
 
 #define UART_BUFFERSIZE (256)
+
 #define ON (1)
 #define OFF (0)
+
+#define USE_WDT (1)
 
 typedef struct
 {
