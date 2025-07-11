@@ -125,7 +125,27 @@ status_t CAN_Receive(
     uint32_t buffIdx,
     can_message_t *message);
 ```
+### 2.6 RX配置完整示例
 
+```c
+  /* CAN init */
+  CAN_Init(&can_pal1_instance, &can_pal1_Config0);
+
+  // 接收邮箱配置结构体
+  can_buff_config_t Rx_buffCfg = {
+      .enableFD = false,
+      .enableBRS = false,
+      .fdPadding = 0U,
+      .idType = CAN_MSG_ID_STD,
+      .isRemote = false         
+  };
+
+  CAN_ConfigRxBuff(&can_pal1_instance, 0, &Rx_buffCfg, 0x00);
+  CAN_SetRxFilter(&can_pal1_instance, CAN_MSG_ID_STD, 0, 0);
+
+  CAN_InstallEventCallback(&can_pal1_instance, &CAN_EventHandler, (void *)0); // 注册回调函数
+  CAN_Receive(&can_pal1_instance, 0, &recvMsg_CAN0);
+```
 回调示例:
 
 ```c
