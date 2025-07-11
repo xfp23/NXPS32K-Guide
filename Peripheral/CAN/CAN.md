@@ -8,7 +8,7 @@
 
 # CAN指南
 
-# 一、CAN初始化
+## 一、CAN初始化
 
 ### 1.1 添加 CAN\_pal 组件
 
@@ -44,7 +44,7 @@ CAN_Init(&can_pal1_instance, &can_pal1_Config0);
 
 ---
 
-# 二、CAN 接收配置 (RX)
+## 二、CAN 接收配置 (RX)
 
 ### 2.1 接收数据结构体
 
@@ -200,7 +200,7 @@ void UserTools_CANReceive(uint8_t *buffer, uint32_t expected_id, uint16_t mailbo
 
 ---
 
-# 三、CAN 发送配置 (TX)
+## 三、CAN 发送配置 (TX)
 
 ### 3.1 配置发送终端箱
 
@@ -257,14 +257,14 @@ void UserTools_CANTransmit(uint8_t *buffer, uint32_t id, uint16_t mailboxIndex, 
 
 ---
 
-# 四、附录
+## 四、附录
 
-## 终端箱 bufferIndex 范围
+### 终端箱 bufferIndex 范围
 
 * 通常为 `0 ~ NumberOfBuffers - 1`
 * 发送和接收需要分配不同 buffer index
 
-## 掩码匹配策略描述
+### 掩码匹配策略描述
 
 * 掩码为 `0x7FF` 表示完全匹配 (11 位 ID)
 * 例: 掩码=0x7F0，配置ID=0x120，则仅在高 8 位匹配时才符合
