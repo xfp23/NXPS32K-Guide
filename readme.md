@@ -77,7 +77,9 @@
 
 [LIN总线介绍](./Peripheral/LIN/lin_Illus.md)
 
-[LIN](./Peripheral/LIN/lin.md)
+[LIN主机指南](./Peripheral/LIN/lin_Master.md)
+
+[LIN从机指南](./Peripheral/LIN/lin_Salve.md)
 
 ### 系统API
 
@@ -93,5 +95,5 @@
 
 [WDT看门狗](./System/WDT/wdt.md)
 
-
+[Bootloader](./System/bootloader/boot.md)
 

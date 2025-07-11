@@ -12,7 +12,9 @@
 
 ### 1.1 添加 CAN\_pal 组件
 
-打开 `Components`菜单选择 `CAN_pal`组件并添加。
+1. 打开`pin_mux`选择CAN总线引脚
+
+2. 打开 `Components`菜单选择 `CAN_pal`组件并添加。
 
 ### 1.2 配置 Configuration 选项卡
 

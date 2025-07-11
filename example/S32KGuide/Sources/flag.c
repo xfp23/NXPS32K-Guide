@@ -407,12 +407,12 @@ void UserTools_CANTransmit(uint8_t *buffer, uint32_t id, uint16_t mailboxIndex, 
 }
 
 /**
- * @brief 
- * 
- * @param buffer 
- * @param expected_id 
- * @param mailboxIndex 
- * @param size 
+ * @brief
+ *
+ * @param buffer
+ * @param expected_id
+ * @param mailboxIndex
+ * @param size
  */
 void UserTools_CANReceive(uint8_t *buffer, uint32_t expected_id, uint16_t mailboxIndex, size_t size)
 {
@@ -433,23 +433,107 @@ void UserTools_CANReceive(uint8_t *buffer, uint32_t expected_id, uint16_t mailbo
     memcpy(buffer, message.data, copyLen);
 }
 
-
+#if 0
 /**
  * @brief lin总线校验ID
- * 
- * @param id 
- * @return uint8_t 
+ *
+ * @param id
+ * @return uint8_t
  */
 uint8_t lin_calc_protected_id(uint8_t id)
 {
-    id &= 0x3F;  // 只保留低6位
+    id &= 0x3F; // 只保留低6位
     uint8_t p0 = ((id >> 0) & 0x01) ^ ((id >> 1) & 0x01) ^
                  ((id >> 2) & 0x01) ^ ((id >> 4) & 0x01);
 
     uint8_t p1 = ~(((id >> 1) & 0x01) ^ ((id >> 3) & 0x01) ^
-                   ((id >> 4) & 0x01) ^ ((id >> 5) & 0x01)) & 0x01;
+                   ((id >> 4) & 0x01) ^ ((id >> 5) & 0x01)) &
+                 0x01;
 
     return (p1 << 7) | (p0 << 6) | id;
 }
+#endif
 
+void LIN_EventHandler(uint32_t instance, lin_state_t *linState)
+{
+    lin_callback_t Current = linState->Callback;
 
+    if (instance == INST_LIN1)
+    {
+        switch (linState->currentEventId)
+        {
+        case LIN_PID_OK: // 接收到有效的帧标识符
+            LIN_DRV_SetTimeoutCounter(INST_LIN1, 500);
+            /** user code begin */
+
+            /** user code end */
+
+            break;
+        case LIN_PID_ERROR: // 帧标识符（PID）错误
+            LIN_DRV_GoToSleepMode(INST_LIN1);
+            /** user code begin */
+
+            /** user code end */
+
+            break;
+        case LIN_WAKEUP_SIGNAL: // 收到唤醒信号
+
+            /** user code begin */
+
+            /** user code end */
+            break;
+        case LIN_RX_COMPLETED: // 接收完成
+            LIN_DRV_GotoIdleState(INST_LIN1);
+            /** user code begin */
+
+            /** user code end */
+            break;
+        case LIN_TX_COMPLETED: // 发送完成
+            LIN_DRV_GotoIdleState(INST_LIN1);
+            /** user code begin */
+
+            /** user code end */
+
+            break;
+        case LIN_CHECKSUM_ERROR: // 出错
+        case LIN_READBACK_ERROR:
+        case LIN_FRAME_ERROR:
+        case LIN_RECV_BREAK_FIELD_OK:
+            LIN_DRV_SetTimeoutCounter(INST_LIN1, 500);
+
+            /** user code begin */
+
+            /** user code end */
+
+            break;
+
+        default:
+            break;
+        }
+    }
+}
+
+#define TIMER_COMPARE_VAL (uint16_t)(2000U)
+static uint16_t timerOverflowInterruptCount = 0U;
+
+uint32_t lin1TimerGetTimeIntervalCallback0(uint32_t *ns)
+{
+    static uint32_t previousCountValue = 0UL;
+    uint32_t counterValue;
+
+    counterValue = FTM_DRV_CounterRead(INST_FLEXTIMER_MC2);
+    *ns = ((uint32_t)(counterValue + timerOverflowInterruptCount * TIMER_COMPARE_VAL - previousCountValue)) * 1000U / 4U;
+    timerOverflowInterruptCount = 0UL;
+    previousCountValue = counterValue;
+    return 0UL;
+}
+
+ftm_state_t LINState_FTM2 = {0};
+void LIN_TimeoutEventHandler()
+{
+    /* LIN总线超时服务*/
+    LIN_DRV_TimeoutService(INST_LIN1);
+    /* Increment overflow count */
+    timerOverflowInterruptCount++;
+    FTM_DRV_ClearStatusFlags(INST_FLEXTIMER_MC2, (uint32_t)FTM_TIME_OVER_FLOW_FLAG);
+}

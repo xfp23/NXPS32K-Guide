@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-11, 10:19, # CodeGen: 39
+**     Date/Time   : 2025-07-11, 15:03, # CodeGen: 40
 **     Abstract    :
 **
 **     Settings    :
@@ -481,8 +481,8 @@
 **                LPUART1                                  : 
 **                  Clear to Send                          : <Automatic>
 **                  Request to Send                        : <Automatic>
-**                  Receive Data                           : <Automatic>
-**                  Transmit Data                          : <Automatic>
+**                  Receive Data                           : PTC6
+**                  Transmit Data                          : PTC9
 **                  Direction                              : <Automatic>
 **                Custom name                              : LPUART2
 **                LPUART2                                  : 
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 21
+#define NUM_OF_CONFIGURED_PINS 23
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

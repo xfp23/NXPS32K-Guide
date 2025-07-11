@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K14XRM Rev. 2, 02/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-11, 10:19, # CodeGen: 39
+**     Date/Time   : 2025-07-11, 16:07, # CodeGen: 41
 **     Abstract    :
 **
 **     Settings    :
@@ -73,6 +73,7 @@
 #include "spi_pal.h"
 #include "wdog_driver.h"
 #include "can_pal.h"
+#include "lin_driver.h"
 #include "system_S32K144.h"
 
 /* Including needed modules to compile this module/procedure */
@@ -89,6 +90,8 @@
 #include "spi1.h"
 #include "watchdog1.h"
 #include "can_pal1.h"
+#include "lin1.h"
+#include "flexTimer_mc2.h"
 
 #ifdef __cplusplus
 extern "C" {

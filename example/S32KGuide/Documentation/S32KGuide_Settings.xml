@@ -238,5 +238,33 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
+  <Bean name="lin1" type="lin">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="lin1" />
+      <Device v="LPUART2" />
+      <Component_version v="S32_SDK" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="flexTimer_mc2" type="ftm_mc">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="flexTimer_mc2" />
+      <Device v="FTM1" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>
 

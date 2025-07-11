@@ -42,6 +42,7 @@ typedef struct
 } UserCommon_t;
 
 extern ftm_state_t UserState_FTM0;
+extern ftm_state_t LINState_FTM2;
 extern UserCommon_t UserCommon;
 extern lpi2c_master_state_t lpi2c1_MasterState;
 extern can_message_t recvMsg_CAN0;
@@ -53,7 +54,8 @@ extern void PTC_EXT_IRQ();
 extern void UART_RX_ISR(void *driverState, uart_event_t event, void *userData);
 extern void UART_RX_DMA_Callback(void *driverState, uart_event_t event, void *userData);
 extern void CAN_EventHandler(uint32_t canInstance,can_event_t eventType,uint32_t mailboxIndex,void *userData);
-
+extern void LIN_EventHandler(uint32_t instance, lin_state_t *linState);
+extern void LIN_TimeoutEventHandler();
 #ifdef __cplusplus
 }
 #endif

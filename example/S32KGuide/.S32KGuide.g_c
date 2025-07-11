@@ -660,6 +660,60 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\lin\lin_common.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\lin\lin_common.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\lin\lin_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\lin\lin_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\lin\lin_irq.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\lin\lin_irq.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\inc\lin_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\lin_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\lpuart\lin_lpuart_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\lpuart\lin_lpuart_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\lpuart\lin_lpuart_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\lpuart\lin_lpuart_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
         <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\devices\devassert.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
@@ -888,7 +942,7 @@
         <Line>Events</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="0" />
-      <GenAllModules lines_count="15">
+      <GenAllModules lines_count="17">
         <Line>adConv1</Line>
         <Line>can_pal1</Line>
         <Line>clockMan1</Line>
@@ -896,7 +950,9 @@
         <Line>dmaController1</Line>
         <Line>Events</Line>
         <Line>flexTimer_mc1</Line>
+        <Line>flexTimer_mc2</Line>
         <Line>i2c1</Line>
+        <Line>lin1</Line>
         <Line>lpi2c1</Line>
         <Line>lpspiCom1</Line>
         <Line>lpuart1</Line>
@@ -906,7 +962,7 @@
         <Line>watchdog1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="13">
+      <GenBeanModules lines_count="15">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
         <Line>adConv1</Line>
@@ -920,11 +976,13 @@
         <Line>spi1</Line>
         <Line>watchdog1</Line>
         <Line>can_pal1</Line>
+        <Line>lin1</Line>
+        <Line>flexTimer_mc2</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>33</ProjectModificationStamp>
+    <ProjectModificationStamp>35</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -932,8 +990,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1525371505</HeaderAge>
-    <CodeAge>1525306694</CodeAge>
+    <HeaderAge>1525383418</HeaderAge>
+    <CodeAge>1525383418</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -1005,8 +1063,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1525371505</HeaderAge>
-    <CodeAge>1525371505</CodeAge>
+    <HeaderAge>1525381240</HeaderAge>
+    <CodeAge>1525381240</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>25</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -1590,6 +1648,110 @@
     <ExtraFile1>SDK\platform\pal\inc\can_pal_mapping.h</ExtraFile1>
     <ExtraFile2>SDK\platform\pal\src\can\can_pal.c</ExtraFile2>
   </ComponentID_27>
+  <ComponentID_28>
+    <Generated>true</Generated>
+    <GenCompName>lin1</GenCompName>
+    <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule>Events</GenEventModule>
+    <HeaderAge>1525381240</HeaderAge>
+    <CodeAge>1525381240</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>24</GenNumMethods>
+    <LIN_DRV_Init>true</LIN_DRV_Init>
+    <LIN_DRV_Deinit>true</LIN_DRV_Deinit>
+    <LIN_DRV_GetDefaultConfig>true</LIN_DRV_GetDefaultConfig>
+    <LIN_DRV_InstallCallback>true</LIN_DRV_InstallCallback>
+    <LIN_DRV_SendFrameDataBlocking>true</LIN_DRV_SendFrameDataBlocking>
+    <LIN_DRV_SendFrameData>true</LIN_DRV_SendFrameData>
+    <LIN_DRV_GetTransmitStatus>true</LIN_DRV_GetTransmitStatus>
+    <LIN_DRV_AbortTransferData>true</LIN_DRV_AbortTransferData>
+    <LIN_DRV_ReceiveFrameDataBlocking>true</LIN_DRV_ReceiveFrameDataBlocking>
+    <LIN_DRV_ReceiveFrameData>true</LIN_DRV_ReceiveFrameData>
+    <LIN_DRV_GetReceiveStatus>true</LIN_DRV_GetReceiveStatus>
+    <LIN_DRV_GoToSleepMode>true</LIN_DRV_GoToSleepMode>
+    <LIN_DRV_GotoIdleState>true</LIN_DRV_GotoIdleState>
+    <LIN_DRV_SendWakeupSignal>true</LIN_DRV_SendWakeupSignal>
+    <LIN_DRV_GetCurrentNodeState>true</LIN_DRV_GetCurrentNodeState>
+    <LIN_DRV_TimeoutService>true</LIN_DRV_TimeoutService>
+    <LIN_DRV_SetTimeoutCounter>true</LIN_DRV_SetTimeoutCounter>
+    <LIN_DRV_MasterSendHeader>true</LIN_DRV_MasterSendHeader>
+    <LIN_DRV_EnableIRQ>true</LIN_DRV_EnableIRQ>
+    <LIN_DRV_DisableIRQ>true</LIN_DRV_DisableIRQ>
+    <LIN_DRV_IRQHandler>true</LIN_DRV_IRQHandler>
+    <LIN_DRV_ProcessParity>true</LIN_DRV_ProcessParity>
+    <LIN_DRV_MakeChecksumByte>true</LIN_DRV_MakeChecksumByte>
+    <LIN_DRV_AutoBaudCapture>true</LIN_DRV_AutoBaudCapture>
+    <GenNumEvents>1</GenNumEvents>
+    <Callback_Selected>0</Callback_Selected>
+    <Callback_Name />
+    <Callback_Priority>interrupts disabled</Callback_Priority>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>12</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\src\lpuart\lin_lpuart_driver.c</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\lpuart\lin_lpuart_driver.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\src\lpuart\lpuart_irq.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\lpuart\lpuart_hw_access.h</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\lpuart\lpuart_irq.c</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\lpuart\lpuart_hw_access.c</ExtraFile5>
+    <ExtraFile6>SDK\platform\drivers\src\lpuart\lpuart_driver.c</ExtraFile6>
+    <ExtraFile7>SDK\platform\drivers\inc\lpuart_driver.h</ExtraFile7>
+    <ExtraFile8>SDK\platform\drivers\inc\lin_driver.h</ExtraFile8>
+    <ExtraFile9>SDK\platform\drivers\src\lin\lin_irq.c</ExtraFile9>
+    <ExtraFile10>SDK\platform\drivers\src\lin\lin_driver.c</ExtraFile10>
+    <ExtraFile11>SDK\platform\drivers\src\lin\lin_common.c</ExtraFile11>
+  </ComponentID_28>
+  <ComponentID_29>
+    <Generated>true</Generated>
+    <GenCompName>flexTimer_mc2</GenCompName>
+    <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1525383418</HeaderAge>
+    <CodeAge>1525383418</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>18</GenNumMethods>
+    <FTM_DRV_Init>true</FTM_DRV_Init>
+    <FTM_DRV_Deinit>true</FTM_DRV_Deinit>
+    <FTM_DRV_GetDefaultConfig>true</FTM_DRV_GetDefaultConfig>
+    <FTM_DRV_InitCounter>true</FTM_DRV_InitCounter>
+    <FTM_DRV_CounterStart>true</FTM_DRV_CounterStart>
+    <FTM_DRV_CounterStop>true</FTM_DRV_CounterStop>
+    <FTM_DRV_CounterRead>true</FTM_DRV_CounterRead>
+    <FTM_MC_DRV_GetDefaultConfig>true</FTM_MC_DRV_GetDefaultConfig>
+    <FTM_DRV_MaskOutputChannels>true</FTM_DRV_MaskOutputChannels>
+    <FTM_DRV_SetInitialCounterValue>true</FTM_DRV_SetInitialCounterValue>
+    <FTM_DRV_SetHalfCycleReloadPoint>true</FTM_DRV_SetHalfCycleReloadPoint>
+    <FTM_DRV_SetSoftOutChnValue>true</FTM_DRV_SetSoftOutChnValue>
+    <FTM_DRV_SetSoftwareOutputChannelControl>true</FTM_DRV_SetSoftwareOutputChannelControl>
+    <FTM_DRV_SetInvertingControl>true</FTM_DRV_SetInvertingControl>
+    <FTM_DRV_SetModuloCounterValue>true</FTM_DRV_SetModuloCounterValue>
+    <FTM_DRV_SetSync>true</FTM_DRV_SetSync>
+    <FTM_DRV_GetFrequency>true</FTM_DRV_GetFrequency>
+    <FTM_DRV_ConvertFreqToPeriodTicks>true</FTM_DRV_ConvertFreqToPeriodTicks>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>1</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>IrqHandler</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>101</LineBeg>
+      <LineEnd>101</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>6</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\ftm_mc_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\inc\ftm_common.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\src\ftm\ftm_hw_access.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\ftm\ftm_common.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\ftm\ftm_mc_driver.c</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\ftm\ftm_hw_access.c</ExtraFile5>
+  </ComponentID_29>
   <UsedSrcFiles>
     <SrcFile0>Drivers\interrupt_manager.src=-1</SrcFile0>
     <SrcFile1>Drivers\osifcommon\osif.drv=-1</SrcFile1>
@@ -1640,34 +1802,37 @@
     <SrcFile46>Drivers\Common\Header.c=1316652645</SrcFile46>
     <SrcFile47>Drivers\osif.src=-1</SrcFile47>
     <SrcFile48>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1345390891</SrcFile48>
-    <SrcFile49>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile49>
-    <SrcFile50>Drivers\Common\lpuartAbstract.inc=-1</SrcFile50>
-    <SrcFile51>Drivers\S32_SDK_DMA_16CH\edma_code.drv=-1</SrcFile51>
-    <SrcFile52>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile52>
-    <SrcFile53>Drivers\S32K\S32K144_SDK01\lpi2c.drv=-1</SrcFile53>
-    <SrcFile54>Drivers\S32K\S32K144_SDK01\lpuart.drv=-1</SrcFile54>
-    <SrcFile55>Beans\pwm_pal\Drivers\S32K\S32K144_SDK01\pwm_pal_global_cfg.drv=1314297404</SrcFile55>
-    <SrcFile56>Drivers\can_pal.src=-1</SrcFile56>
-    <SrcFile57>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile57>
-    <SrcFile58>Drivers\lpuart.src=-1</SrcFile58>
-    <SrcFile59>Beans\spi_pal\Drivers\S32K\S32K144_SDK01\spi_pal_global_cfg.drv=1314297460</SrcFile59>
-    <SrcFile60>Drivers\S32K\S32_SDK\can_pal_code.drv=-1</SrcFile60>
-    <SrcFile61>Drivers\S32K\S32K144_SDK01\pwm_pal_code.drv=-1</SrcFile61>
-    <SrcFile62>Drivers\PEx_S32K.src=1316652645</SrcFile62>
-    <SrcFile63>Drivers\S32K\S32K144_SDK01\lpspi_code.drv=-1</SrcFile63>
-    <SrcFile64>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile64>
-    <SrcFile65>Drivers\ftm_mc.src=-1</SrcFile65>
-    <SrcFile66>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile66>
-    <SrcFile67>Drivers\edma.src=-1</SrcFile67>
-    <SrcFile68>Drivers\lpi2c.src=-1</SrcFile68>
-    <SrcFile69>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile69>
-    <SrcFile70>Drivers\wdog.src=-1</SrcFile70>
-    <SrcFile71>Drivers\S32K\S32K144_SDK01\i2c_pal_code.drv=-1</SrcFile71>
-    <SrcFile72>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile72>
-    <SrcFile73>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile73>
-    <SrcFile74>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile74>
-    <SrcFile75>Drivers\Common\Header.end=1316652645</SrcFile75>
-    <SrcFile76>Drivers\clock_manager.src=-1</SrcFile76>
+    <SrcFile49>Drivers\S32K\S32_SDK\lin.drv=-1</SrcFile49>
+    <SrcFile50>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile50>
+    <SrcFile51>Drivers\Common\lpuartAbstract.inc=-1</SrcFile51>
+    <SrcFile52>Drivers\S32_SDK_DMA_16CH\edma_code.drv=-1</SrcFile52>
+    <SrcFile53>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile53>
+    <SrcFile54>Drivers\S32K\S32K144_SDK01\lpi2c.drv=-1</SrcFile54>
+    <SrcFile55>Drivers\S32K\S32K144_SDK01\lpuart.drv=-1</SrcFile55>
+    <SrcFile56>Beans\pwm_pal\Drivers\S32K\S32K144_SDK01\pwm_pal_global_cfg.drv=1314297404</SrcFile56>
+    <SrcFile57>Drivers\can_pal.src=-1</SrcFile57>
+    <SrcFile58>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile58>
+    <SrcFile59>Drivers\lpuart.src=-1</SrcFile59>
+    <SrcFile60>Beans\spi_pal\Drivers\S32K\S32K144_SDK01\spi_pal_global_cfg.drv=1314297460</SrcFile60>
+    <SrcFile61>Drivers\S32K\S32_SDK\can_pal_code.drv=-1</SrcFile61>
+    <SrcFile62>Drivers\lin.src=-1</SrcFile62>
+    <SrcFile63>Drivers\S32K\S32K144_SDK01\pwm_pal_code.drv=-1</SrcFile63>
+    <SrcFile64>Drivers\PEx_S32K.src=1316652645</SrcFile64>
+    <SrcFile65>Drivers\S32K\S32K144_SDK01\lpspi_code.drv=-1</SrcFile65>
+    <SrcFile66>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile66>
+    <SrcFile67>Drivers\ftm_mc.src=-1</SrcFile67>
+    <SrcFile68>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile68>
+    <SrcFile69>Drivers\edma.src=-1</SrcFile69>
+    <SrcFile70>Drivers\lpi2c.src=-1</SrcFile70>
+    <SrcFile71>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile71>
+    <SrcFile72>Drivers\S32K\S32_SDK\lin_code.drv=-1</SrcFile72>
+    <SrcFile73>Drivers\wdog.src=-1</SrcFile73>
+    <SrcFile74>Drivers\S32K\S32K144_SDK01\i2c_pal_code.drv=-1</SrcFile74>
+    <SrcFile75>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile75>
+    <SrcFile76>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile76>
+    <SrcFile77>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile77>
+    <SrcFile78>Drivers\Common\Header.end=1316652645</SrcFile78>
+    <SrcFile79>Drivers\clock_manager.src=-1</SrcFile79>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 

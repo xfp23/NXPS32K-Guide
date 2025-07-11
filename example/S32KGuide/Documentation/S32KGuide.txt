@@ -336,6 +336,112 @@ Module "can_pal1"  (component can_pal)
    - can_pal1_CAN_InstallEventCallback -Installs a callback function for the IRQ handler.
    - can_pal1_CAN_GetDefaultConfig -Returns the default values for the CAN module.
 
+Module "lin1"      (component lin)
+   - lin1_LIN_DRV_Init -Initializes an instance LIN Hardware Interface for LIN Network.
+   - lin1_LIN_DRV_Deinit -Shuts down the LIN Hardware Interface by disabling interrupts and transmitter/receiver.
+   - lin1_LIN_DRV_GetDefaultConfig -Initializes the LIN user configuration structure with default values.
+   - lin1_LIN_DRV_InstallCallback -Installs callback function that is used for LIN_DRV_IRQHandler.
+   - lin1_LIN_DRV_SendFrameDataBlocking -Sends Frame data out through the LIN Hardware Interface using blocking method. This 
+                function will calculate the checksum byte and send it with the frame data. Blocking means that the function 
+                does not return until the transmission is complete. This function checks if txSize is in range from 1 to 8. If 
+                not, it will return STATUS_ERROR. This function also returns STATUS_ERROR if node's current state is in SLEEP 
+                mode. This function checks if the isBusBusy is false, if not it will return LIN_BUS_BUSY. The function does not 
+                return until the transmission is complete. If the transmission is successful, it will return STATUS_SUCCESS. If 
+                not, it will return STATUS_TIMEOUT.
+   - lin1_LIN_DRV_SendFrameData -Sends frame data out through the LIN Hardware Interface using non-blocking method. This 
+                enables an a-sync method for transmitting data. Non-blocking  means that the function returns immediately. The 
+                application has to get the transmit status to know when the transmit is complete. This function will calculate 
+                the checksum byte and send it with the frame data. The function will return immediately after calling this 
+                function. If txSize is equal to 0 or greater than 8 or node's current state is in SLEEP mode then the function 
+                will return STATUS_ERROR. If isBusBusy is currently true then the function will return LIN_BUS_BUSY. Note: if 
+                users use LIN_DRV_TimeoutService in a timer interrupt handler, then before using this function, users have to 
+                set timeout counter to an appropriate value by using LIN_DRV_SetTimeoutCounter(instance, timeoutValue). The 
+                timeout value should be big enough to complete the transmission. Timeout in real time is (timeoutValue) * (time 
+                period that LIN_DRV_TimeoutService is called). For example, if LIN_DRV_TimeoutService is called in an timer 
+                interrupt with period of 500 micro seconds, then timeout in real time is timeoutValue * 500 micro seconds.
+   - lin1_LIN_DRV_GetTransmitStatus -Get status of an on-going non-blocking transmission. While sending frame data using 
+                non-blocking method, users can use this function to get status of that transmission. The bytesRemaining shows 
+                number of bytes that still needed to transmit.
+   - lin1_LIN_DRV_AbortTransferData -Aborts an on-going non-blocking transmission/reception. While performing a non-blocking 
+                transferring data, users can call this function to terminate immediately the transferring.
+   - lin1_LIN_DRV_ReceiveFrameDataBlocking -Receives frame data through the LIN Hardware Interface using blocking method. This 
+                function receives data from LPUART module using blocking method, the function does not return until the receive 
+                is complete. The interrupt handler LIN_LPUART_DRV_IRQHandler will check the checksum byte. If the checksum is 
+                correct, it will receive the frame data. If the checksum is incorrect, this function will return STATUS_TIMEOUT 
+                and data in rxBuff might be wrong. This function also check if rxSize is in range from 1 to 8. If not, it will 
+                return STATUS_ERROR. This function also returns STATUS_ERROR if node's current state is in SLEEP mode. This 
+                function checks if the isBusBusy is false, if not it will return LIN_BUS_BUSY.
+   - lin1_LIN_DRV_ReceiveFrameData -Receives frame data through the LIN Hardware Interface using non-blocking method. This 
+                function will check the checksum byte. If the checksum is correct, it will receive it with the frame data. 
+                Non-blocking  means that the function returns immediately. The application has to get the receive status to 
+                know when the reception is complete. The interrupt handler LIN_LPUART_DRV_IRQHandler will check the checksum 
+                byte. If the checksum is correct, it will receive the frame data. If the checksum is incorrect, this function 
+                will return STATUS_TIMEOUT and data in rxBuff might be wrong. This function also check if rxSize is in range 
+                from 1 to 8. If not, it will return STATUS_ERROR. This function also returns STATUS_ERROR if node's current 
+                state is in SLEEP mode. This function checks if the isBusBusy is false, if not it will return LIN_BUS_BUSY. 
+                Note: if users use LIN_DRV_TimeoutService in a timer interrupt handler, then before using this function, users 
+                have to set timeout counter to an appropriate value by using LIN_DRV_SetTimeoutCounter(instance, timeoutValue). 
+                The timeout value should be big enough to complete the reception. Timeout in real time is (timeoutValue) * 
+                (time period that LIN_DRV_TimeoutService is called). For example, if LIN_DRV_TimeoutService is called in an 
+                timer interrupt with period of 500 micro seconds, then timeout in real time is timeoutValue * 500 micro seconds.
+   - lin1_LIN_DRV_GetReceiveStatus -Get status of an on-going non-blocking reception. This function returns whether the data 
+                reception is complete. When performing non-blocking transmit, the user can call this function to ascertain the 
+                state of the current receive progress: in progress (STATUS_BUSY) or timeout (STATUS_TIMEOUT) or complete 
+                (STATUS_SUCCESS). In addition, if the reception is still in progress, the user can obtain the number of bytes 
+                that still needed to receive.
+   - lin1_LIN_DRV_GoToSleepMode -Puts current LIN node to sleep mode. This function changes current node state to 
+                LIN_NODE_STATE_SLEEP_MODE.
+   - lin1_LIN_DRV_GotoIdleState -Puts current LIN node to Idle state. This function changes current node state to 
+                LIN_NODE_STATE_IDLE.
+   - lin1_LIN_DRV_SendWakeupSignal -Sends a wakeup signal through the LIN Hardware Interface.
+   - lin1_LIN_DRV_GetCurrentNodeState -Get the current LIN node state.
+   - lin1_LIN_DRV_TimeoutService -Callback function for Timer Interrupt Handler. Users may use (optional, not required) 
+                LIN_DRV_TimeoutService to check if timeout has occurred during non-blocking frame data transmission and 
+                reception. User may initialize a timer (for example FTM) in Output Compare Mode with period of 500 micro 
+                seconds (recommended). In timer IRQ handler, call this function.
+   - lin1_LIN_DRV_SetTimeoutCounter -Set Value for Timeout Counter that is used in LIN_DRV_TimeoutService.
+   - lin1_LIN_DRV_MasterSendHeader -Sends frame header out through the LIN Hardware Interface using a non-blocking method. This 
+                function sends LIN Break field, sync field then the ID with correct parity. This function checks if the 
+                interface is Master, if not, it will return STATUS_ERROR.This function checks if id is in range from 0 to 0x3F, 
+                if not it will return STATUS_ERROR.
+   - lin1_LIN_DRV_EnableIRQ -Enables LIN hardware interrupts
+   - lin1_LIN_DRV_DisableIRQ -Disables LIN hardware interrupts
+   - lin1_LIN_DRV_IRQHandler -Interrupt handler for LIN Hardware Interface
+   - lin1_LIN_DRV_ProcessParity -Makes or checks parity bits. If action is checking parity, the function returns ID value if 
+                parity bits are correct or 0xFF if parity bits are incorrect. If action is making parity bits, then from input 
+                value of ID, the function returns PID. This is not a public API as it is called by other API functions
+   - lin1_LIN_DRV_MakeChecksumByte -Makes the checksum byte for a frame
+   - lin1_LIN_DRV_AutoBaudCapture -Captures baudrate automatically when enable autobaud feature. This function should only be 
+                used in Slave.
+
+Module "flexTimer_mc2" (component ftm_mc)
+   - flexTimer_mc2_FTM_DRV_Init -Initializes the FTM driver.
+   - flexTimer_mc2_FTM_DRV_Deinit -Shuts down the FTM driver.
+   - flexTimer_mc2_FTM_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc2_FTM_DRV_InitCounter -Initialize the FTM counter.
+   - flexTimer_mc2_FTM_DRV_CounterStart -Starts the FTM counter.
+   - flexTimer_mc2_FTM_DRV_CounterStop -Stops the FTM counter.
+   - flexTimer_mc2_FTM_DRV_CounterRead -Reads back the current value of the FTM counter.
+   - flexTimer_mc2_FTM_MC_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc2_FTM_DRV_MaskOutputChannels -This function will mask the output of the channels and at match events will be 
+                ignored by the masked channels.
+   - flexTimer_mc2_FTM_DRV_SetInitialCounterValue -This function configure the initial counter value. The counter will get this 
+                value after an overflow event.
+   - flexTimer_mc2_FTM_DRV_SetHalfCycleReloadPoint -This function configure the value of the counter which will generates an 
+                reload point.
+   - flexTimer_mc2_FTM_DRV_SetSoftOutChnValue -This function will force the output value of a channel to a specific value. 
+                Before using this function it's mandatory to mask the match events using FTM_DRV_MaskOutputChannels and to 
+                enable software output control using FTM_DRV_SetSoftwareOutputChannelControl.
+   - flexTimer_mc2_FTM_DRV_SetSoftwareOutputChannelControl -This function will configure which output channel can be software 
+                controlled.
+   - flexTimer_mc2_FTM_DRV_SetInvertingControl -This function will configure if the second channel of a pair will be inverted 
+                or not.
+   - flexTimer_mc2_FTM_DRV_SetModuloCounterValue -This function configure the maximum counter value.
+   - flexTimer_mc2_FTM_DRV_SetSync -This function configures sync mechanism for some FTM registers ( MOD, CNINT, HCR, CnV, 
+                OUTMASK, INVCTRL, SWOCTRL).
+   - flexTimer_mc2_FTM_DRV_GetFrequency -Retrieves the frequency of the clock source feeding the FTM counter.
+   - flexTimer_mc2_FTM_DRV_ConvertFreqToPeriodTicks -This function is used to covert the given frequency to period in ticks.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.
