@@ -65,8 +65,8 @@ int main(void)
   ///** 设置外部中断 *
 
   /* 设置中断触发条件 */
-  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�??????????????
-  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�??????????????
+  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�???????????????
+  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�???????????????
   /* 安装中断处理函数 */
   INT_SYS_InstallHandler(PORTC_IRQn, &PTC_EXT_IRQ, NULL);
   /* 启用中断 */
@@ -87,19 +87,45 @@ int main(void)
   LPI2C_DRV_MasterInit(INST_LPI2C1, &lpi2c1_MasterConfig0, &lpi2c1_MasterState);
   /** PWM init */
   PWM_Init(&pwm_pal1Instance, &pwm_pal1Configs);
-  PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50 / 100)); // 占空比根据周期计�????????????
+  PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50 / 100)); // 占空比根据周期计�?????????????
 
   /** spi init
    */
   LPSPI_DRV_MasterInit(LPSPICOM1, &lpspiCom1State, &lpspiCom1_MasterConfig0);
   // LPSPI_DRV_MasterTransfer(LPSPICOM1,);
 
-
   /* CAN init */
+  CAN_Init(&can_pal1_instance, &can_pal1_Config0);
+
+  // 接收邮箱配置结构体
+  can_buff_config_t Rx_buffCfg = {
+      .enableFD = false,        // 是否启用 CAN FD（Flexible Data-rate），false = 传统CAN（8字节最大），true = 支持最长64字节
+      .enableBRS = false,       // BRS = Bit Rate Switching，是否启用数据段加速，仅在 CAN FD 模式下有效，标准CAN应为 false
+      .fdPadding = 0U,          // 当发送数据少于最大长度时是否填充0（FD用），标准 CAN 可设为 0
+      .idType = CAN_MSG_ID_STD, // 报文 ID 类型，CAN_MSG_ID_STD = 标准帧（11位 ID），CAN_MSG_ID_EXT = 扩展帧（29位 ID）
+      .isRemote = false         // 是否为远程帧（RTR），false = 正常数据帧，true = 远程帧（请求对方发送数据）
+  };
+
+  CAN_ConfigRxBuff(&can_pal1_instance, 0, &Rx_buffCfg, 0x00);
+  CAN_SetRxFilter(&can_pal1_instance, CAN_MSG_ID_STD, 0, 0);
+
+  CAN_InstallEventCallback(&can_pal1_instance, &CAN_EventHandler, (void *)0); // 注册回调函数
+  CAN_Receive(&can_pal1_instance, 0, &recvMsg_CAN0);
+
+  // 发送邮箱配置结构体
+  can_buff_config_t Tx_buffCfg = {
+      .enableFD = false,        // 是否启用 CAN FD，false 表示使用经典 CAN 协议
+      .enableBRS = false,       // 是否启用 BRS（位速切换），用于 CAN FD 提高数据段速率，标准 CAN 设为 false
+      .fdPadding = 0U,          // 发送时不足最大帧长是否自动填充，CAN FD 模式有效
+      .idType = CAN_MSG_ID_STD, // 报文 ID 类型，使用标准帧（11位 ID）
+      .isRemote = false         // 是否为远程帧，false 表示是正常数据帧
+  };
+
+  CAN_ConfigTxBuff(&can_pal1_instance, 1, &Tx_buffCfg);
 
 
-/** LIN init */
 
+  /** LIN init */
 
 #if USE_WDT
   /** WDOG init */
@@ -114,14 +140,16 @@ int main(void)
     UserGuide_gpio();
     UserGuide_adc();
   }
-  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
-  #ifdef PEX_RTOS_START
-    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
-  #endif
+/*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+#ifdef PEX_RTOS_START
+  PEX_RTOS_START(); /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+#endif
   /*** End of RTOS startup code.  ***/
   /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
-  for(;;) {
-    if(exit_code != 0) {
+  for (;;)
+  {
+    if (exit_code != 0)
+    {
       break;
     }
   }

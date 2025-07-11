@@ -14,14 +14,17 @@
       <LinkerFileGenerated>false</LinkerFileGenerated>
       <MakefileGenerated>false</MakefileGenerated>
       <GenSharedModules lines_count="0" />
-      <GenExtraFiles lines_count="3">
+      <GenExtraFiles lines_count="4">
+        <Line>Generated_Code\can_pal_cfg.h</Line>
         <Line>Generated_Code\spi_pal_cfg.h</Line>
         <Line>Generated_Code\i2c_pal_cfg.h</Line>
         <Line>Generated_Code\pwm_pal_cfg.h</Line>
       </GenExtraFiles>
-      <XtraAge0>1525307754</XtraAge0>
-      <XtraAge1>1525305551</XtraAge1>
-      <XtraAge2>1525307754</XtraAge2>
+      <XtraAge0>1525371505</XtraAge0>
+      <XtraAge1>1525307754</XtraAge1>
+      <XtraAge2>1525371505</XtraAge2>
+      <XtraAge3>1525307754</XtraAge3>
+      <GenExtraFileType3>4</GenExtraFileType3>
       <GenExtraFileType2>4</GenExtraFileType2>
       <GenExtraFileType1>4</GenExtraFileType1>
       <GenExtraFileType0>4</GenExtraFileType0>
@@ -630,6 +633,33 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\pal\src\can\can_pal.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\pal\src\can\can_pal.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\pal\inc\can_pal_mapping.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\pal\inc\can_pal_mapping.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\pal\inc\can_pal.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\pal\inc\can_pal.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
         <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\devices\devassert.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
@@ -800,12 +830,67 @@
         <NoMoreGenerated>false</NoMoreGenerated>
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\flexcan\flexcan_hw_access.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\flexcan\flexcan_hw_access.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\flexcan\flexcan_hw_access.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\flexcan\flexcan_hw_access.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\flexcan\flexcan_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\flexcan\flexcan_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\flexcan\flexcan_irq.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\flexcan\flexcan_irq.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\src\flexcan\flexcan_irq.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\flexcan\flexcan_irq.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>D:\NXP\SDK2.2\eclipse\ProcessorExpert\..\..\S32DS\software\S32SDK_S32K1xx_RTM_3.0.0\platform\drivers\inc\flexcan_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\flexcan_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
       <GenEventModules lines_count="1">
         <Line>Events</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="0" />
-      <GenAllModules lines_count="14">
+      <GenAllModules lines_count="15">
         <Line>adConv1</Line>
+        <Line>can_pal1</Line>
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>dmaController1</Line>
@@ -821,7 +906,7 @@
         <Line>watchdog1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="12">
+      <GenBeanModules lines_count="13">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
         <Line>adConv1</Line>
@@ -834,11 +919,12 @@
         <Line>lpspiCom1</Line>
         <Line>spi1</Line>
         <Line>watchdog1</Line>
+        <Line>can_pal1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>32</ProjectModificationStamp>
+    <ProjectModificationStamp>33</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -846,7 +932,7 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1525308004</HeaderAge>
+    <HeaderAge>1525371505</HeaderAge>
     <CodeAge>1525306694</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
@@ -860,48 +946,58 @@
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenExtraFilesCount>41</GenExtraFilesCount>
-    <ExtraFile0>SDK\platform\drivers\inc\lpspi_slave_driver.h</ExtraFile0>
-    <ExtraFile1>SDK\platform\drivers\inc\lpspi_shared_function.h</ExtraFile1>
-    <ExtraFile2>SDK\platform\drivers\inc\lpspi_master_driver.h</ExtraFile2>
-    <ExtraFile3>SDK\platform\drivers\src\lpspi\lpspi_hw_access.h</ExtraFile3>
-    <ExtraFile4>SDK\platform\drivers\src\lpspi\lpspi_hw_access.c</ExtraFile4>
-    <ExtraFile5>SDK\platform\drivers\src\lpspi\lpspi_slave_driver.c</ExtraFile5>
-    <ExtraFile6>SDK\platform\drivers\src\lpspi\lpspi_shared_function.c</ExtraFile6>
-    <ExtraFile7>SDK\platform\drivers\src\lpspi\lpspi_master_driver.c</ExtraFile7>
-    <ExtraFile8>SDK\platform\drivers\src\lpspi\lpspi_irq.c</ExtraFile8>
-    <ExtraFile9>Generated_Code\spi_pal_cfg.h</ExtraFile9>
-    <ExtraFile10>SDK\platform\pal\inc\spi_pal.h</ExtraFile10>
-    <ExtraFile11>SDK\platform\pal\inc\spi_pal_mapping.h</ExtraFile11>
-    <ExtraFile12>SDK\platform\pal\src\spi\spi_pal.c</ExtraFile12>
-    <ExtraFile13>SDK\platform\drivers\inc\flexio.h</ExtraFile13>
-    <ExtraFile14>SDK\platform\drivers\inc\flexio_i2c_driver.h</ExtraFile14>
-    <ExtraFile15>SDK\platform\drivers\src\flexio\flexio_hw_access.h</ExtraFile15>
-    <ExtraFile16>SDK\platform\drivers\src\flexio\flexio_common.h</ExtraFile16>
-    <ExtraFile17>SDK\platform\drivers\src\flexio\flexio_common.c</ExtraFile17>
-    <ExtraFile18>SDK\platform\drivers\src\flexio\flexio_i2c_driver.c</ExtraFile18>
-    <ExtraFile19>Generated_Code\i2c_pal_cfg.h</ExtraFile19>
-    <ExtraFile20>SDK\platform\pal\inc\i2c_pal.h</ExtraFile20>
-    <ExtraFile21>SDK\platform\pal\inc\i2c_pal_mapping.h</ExtraFile21>
-    <ExtraFile22>SDK\platform\pal\src\i2c\i2c_pal.c</ExtraFile22>
-    <ExtraFile23>SDK\platform\drivers\inc\ftm_pwm_driver.h</ExtraFile23>
-    <ExtraFile24>SDK\platform\drivers\inc\ftm_common.h</ExtraFile24>
-    <ExtraFile25>SDK\platform\drivers\src\ftm\ftm_hw_access.h</ExtraFile25>
-    <ExtraFile26>SDK\platform\drivers\src\ftm\ftm_common.c</ExtraFile26>
-    <ExtraFile27>SDK\platform\drivers\src\ftm\ftm_pwm_driver.c</ExtraFile27>
-    <ExtraFile28>SDK\platform\drivers\src\ftm\ftm_hw_access.c</ExtraFile28>
-    <ExtraFile29>Generated_Code\pwm_pal_cfg.h</ExtraFile29>
-    <ExtraFile30>SDK\platform\devices\S32K144\include\S32K144.h</ExtraFile30>
-    <ExtraFile31>SDK\platform\devices\S32K144\include\S32K144_features.h</ExtraFile31>
-    <ExtraFile32>SDK\platform\devices\S32K144\startup\system_S32K144.c</ExtraFile32>
-    <ExtraFile33>SDK\platform\devices\S32K144\startup\system_S32K144.h</ExtraFile33>
-    <ExtraFile34>SDK\platform\devices\startup.c</ExtraFile34>
-    <ExtraFile35>SDK\platform\devices\startup.h</ExtraFile35>
-    <ExtraFile36>SDK\platform\devices\common\s32_core_cm4.h</ExtraFile36>
-    <ExtraFile37>SDK\platform\devices\callbacks.h</ExtraFile37>
-    <ExtraFile38>SDK\platform\devices\device_registers.h</ExtraFile38>
-    <ExtraFile39>SDK\platform\devices\status.h</ExtraFile39>
-    <ExtraFile40>SDK\platform\devices\devassert.h</ExtraFile40>
+    <GenExtraFilesCount>51</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\flexcan_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\flexcan\flexcan_irq.c</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\src\flexcan\flexcan_irq.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\flexcan\flexcan_driver.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\flexcan\flexcan_hw_access.h</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\flexcan\flexcan_hw_access.c</ExtraFile5>
+    <ExtraFile6>Generated_Code\can_pal_cfg.h</ExtraFile6>
+    <ExtraFile7>SDK\platform\pal\inc\can_pal.h</ExtraFile7>
+    <ExtraFile8>SDK\platform\pal\inc\can_pal_mapping.h</ExtraFile8>
+    <ExtraFile9>SDK\platform\pal\src\can\can_pal.c</ExtraFile9>
+    <ExtraFile10>SDK\platform\drivers\inc\lpspi_slave_driver.h</ExtraFile10>
+    <ExtraFile11>SDK\platform\drivers\inc\lpspi_shared_function.h</ExtraFile11>
+    <ExtraFile12>SDK\platform\drivers\inc\lpspi_master_driver.h</ExtraFile12>
+    <ExtraFile13>SDK\platform\drivers\src\lpspi\lpspi_hw_access.h</ExtraFile13>
+    <ExtraFile14>SDK\platform\drivers\src\lpspi\lpspi_hw_access.c</ExtraFile14>
+    <ExtraFile15>SDK\platform\drivers\src\lpspi\lpspi_slave_driver.c</ExtraFile15>
+    <ExtraFile16>SDK\platform\drivers\src\lpspi\lpspi_shared_function.c</ExtraFile16>
+    <ExtraFile17>SDK\platform\drivers\src\lpspi\lpspi_master_driver.c</ExtraFile17>
+    <ExtraFile18>SDK\platform\drivers\src\lpspi\lpspi_irq.c</ExtraFile18>
+    <ExtraFile19>Generated_Code\spi_pal_cfg.h</ExtraFile19>
+    <ExtraFile20>SDK\platform\pal\inc\spi_pal.h</ExtraFile20>
+    <ExtraFile21>SDK\platform\pal\inc\spi_pal_mapping.h</ExtraFile21>
+    <ExtraFile22>SDK\platform\pal\src\spi\spi_pal.c</ExtraFile22>
+    <ExtraFile23>SDK\platform\drivers\inc\flexio.h</ExtraFile23>
+    <ExtraFile24>SDK\platform\drivers\inc\flexio_i2c_driver.h</ExtraFile24>
+    <ExtraFile25>SDK\platform\drivers\src\flexio\flexio_hw_access.h</ExtraFile25>
+    <ExtraFile26>SDK\platform\drivers\src\flexio\flexio_common.h</ExtraFile26>
+    <ExtraFile27>SDK\platform\drivers\src\flexio\flexio_common.c</ExtraFile27>
+    <ExtraFile28>SDK\platform\drivers\src\flexio\flexio_i2c_driver.c</ExtraFile28>
+    <ExtraFile29>Generated_Code\i2c_pal_cfg.h</ExtraFile29>
+    <ExtraFile30>SDK\platform\pal\inc\i2c_pal.h</ExtraFile30>
+    <ExtraFile31>SDK\platform\pal\inc\i2c_pal_mapping.h</ExtraFile31>
+    <ExtraFile32>SDK\platform\pal\src\i2c\i2c_pal.c</ExtraFile32>
+    <ExtraFile33>SDK\platform\drivers\inc\ftm_pwm_driver.h</ExtraFile33>
+    <ExtraFile34>SDK\platform\drivers\inc\ftm_common.h</ExtraFile34>
+    <ExtraFile35>SDK\platform\drivers\src\ftm\ftm_hw_access.h</ExtraFile35>
+    <ExtraFile36>SDK\platform\drivers\src\ftm\ftm_common.c</ExtraFile36>
+    <ExtraFile37>SDK\platform\drivers\src\ftm\ftm_pwm_driver.c</ExtraFile37>
+    <ExtraFile38>SDK\platform\drivers\src\ftm\ftm_hw_access.c</ExtraFile38>
+    <ExtraFile39>Generated_Code\pwm_pal_cfg.h</ExtraFile39>
+    <ExtraFile40>SDK\platform\devices\S32K144\include\S32K144.h</ExtraFile40>
+    <ExtraFile41>SDK\platform\devices\S32K144\include\S32K144_features.h</ExtraFile41>
+    <ExtraFile42>SDK\platform\devices\S32K144\startup\system_S32K144.c</ExtraFile42>
+    <ExtraFile43>SDK\platform\devices\S32K144\startup\system_S32K144.h</ExtraFile43>
+    <ExtraFile44>SDK\platform\devices\startup.c</ExtraFile44>
+    <ExtraFile45>SDK\platform\devices\startup.h</ExtraFile45>
+    <ExtraFile46>SDK\platform\devices\common\s32_core_cm4.h</ExtraFile46>
+    <ExtraFile47>SDK\platform\devices\callbacks.h</ExtraFile47>
+    <ExtraFile48>SDK\platform\devices\device_registers.h</ExtraFile48>
+    <ExtraFile49>SDK\platform\devices\status.h</ExtraFile49>
+    <ExtraFile50>SDK\platform\devices\devassert.h</ExtraFile50>
   </CpuID_1>
   <ComponentID_2>
     <Generated>true</Generated>
@@ -909,8 +1005,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1525307754</HeaderAge>
-    <CodeAge>1525306694</CodeAge>
+    <HeaderAge>1525371505</HeaderAge>
+    <CodeAge>1525371505</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>25</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -956,8 +1052,8 @@
     <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1525306694</HeaderAge>
-    <CodeAge>1525314267</CodeAge>
+    <HeaderAge>1525371505</HeaderAge>
+    <CodeAge>1525371505</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>6</GenNumMethods>
     <CLOCK_DRV_Init>true</CLOCK_DRV_Init>
@@ -1431,7 +1527,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
     <HeaderAge>1525308004</HeaderAge>
-    <CodeAge>1525308304</CodeAge>
+    <CodeAge>1525371505</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>13</GenNumMethods>
     <WDOG_DRV_Init>true</WDOG_DRV_Init>
@@ -1458,80 +1554,120 @@
     <ExtraFile2>SDK\platform\drivers\src\wdog\wdog_hw_access.c</ExtraFile2>
     <ExtraFile3>SDK\platform\drivers\src\wdog\wdog_driver.c</ExtraFile3>
   </ComponentID_26>
+  <ComponentID_27>
+    <Generated>true</Generated>
+    <GenCompName>can_pal1</GenCompName>
+    <GenComponentVersion>SDK_S32K1xx_15</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1525371505</HeaderAge>
+    <CodeAge>1525371505</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>16</GenNumMethods>
+    <CAN_Init>true</CAN_Init>
+    <CAN_Deinit>true</CAN_Deinit>
+    <CAN_SetBitrate>true</CAN_SetBitrate>
+    <CAN_GetBitrate>true</CAN_GetBitrate>
+    <CAN_ConfigTxBuff>true</CAN_ConfigTxBuff>
+    <CAN_ConfigRemoteResponseBuff>true</CAN_ConfigRemoteResponseBuff>
+    <CAN_ConfigRxBuff>true</CAN_ConfigRxBuff>
+    <CAN_Send>true</CAN_Send>
+    <CAN_SendBlocking>true</CAN_SendBlocking>
+    <CAN_Receive>true</CAN_Receive>
+    <CAN_ReceiveBlocking>true</CAN_ReceiveBlocking>
+    <CAN_AbortTransfer>true</CAN_AbortTransfer>
+    <CAN_SetRxFilter>true</CAN_SetRxFilter>
+    <CAN_GetTransferStatus>true</CAN_GetTransferStatus>
+    <CAN_InstallEventCallback>true</CAN_InstallEventCallback>
+    <CAN_GetDefaultConfig>true</CAN_GetDefaultConfig>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>3</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\pal\inc\can_pal.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\pal\inc\can_pal_mapping.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\pal\src\can\can_pal.c</ExtraFile2>
+  </ComponentID_27>
   <UsedSrcFiles>
     <SrcFile0>Drivers\interrupt_manager.src=-1</SrcFile0>
     <SrcFile1>Drivers\osifcommon\osif.drv=-1</SrcFile1>
-    <SrcFile2>Beans\_SDK\SdkOptions.chg=1331017399</SrcFile2>
-    <SrcFile3>Drivers\Common\EBGNSupport\StringLib.prg=1316652646</SrcFile3>
-    <SrcFile4>Drivers\S32K\S32K144_SDK01\ftm_mc_code.drv=-1</SrcFile4>
-    <SrcFile5>Drivers\Common\S32KSettings.inc=1316652645</SrcFile5>
-    <SrcFile6>Drivers\S32K\PinSettings_S32K144_100.prg=-1</SrcFile6>
-    <SrcFile7>Drivers\S32K\S32K144_SDK01\lpi2c_code.drv=-1</SrcFile7>
-    <SrcFile8>Drivers\S32K\S32K144_SDK01\adc_code.drv=-1</SrcFile8>
-    <SrcFile9>Drivers\Common\HeaderFreescale.C=1316652645</SrcFile9>
-    <SrcFile10>Drivers\Common\RTOSAdaptor.prg=1316652645</SrcFile10>
-    <SrcFile11>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1316652646</SrcFile11>
-    <SrcFile12>Drivers\sw\PinSettings.drv=-1</SrcFile12>
-    <SrcFile13>Drivers\Common\Header.doxy=1345390891</SrcFile13>
-    <SrcFile14>Drivers\Common\GenInitConfigSequence.prg=1316652645</SrcFile14>
-    <SrcFile15>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1316652646</SrcFile15>
-    <SrcFile16>Drivers\PinSettings.src=-1</SrcFile16>
-    <SrcFile17>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile17>
-    <SrcFile18>Drivers\S32K\HAL_Port_Bridge_V2.prg=1316652646</SrcFile18>
-    <SrcFile19>Drivers\S32K\S32K144_SDK01\lpuart_code.drv=-1</SrcFile19>
-    <SrcFile20>Drivers\S32K\S32_SDK\wdog.drv=-1</SrcFile20>
-    <SrcFile21>Drivers\Common\InitReg32Block.prg=1316652645</SrcFile21>
-    <SrcFile22>Drivers\i2c_pal.src=-1</SrcFile22>
-    <SrcFile23>Drivers\S32K\S32K144_SDK01\i2c_pal.drv=-1</SrcFile23>
-    <SrcFile24>Drivers\S32K\S32K144_SDK01\pwm_pal.drv=-1</SrcFile24>
-    <SrcFile25>Drivers\S32K\StaticSdk_S32K_V4.drv=1316652646</SrcFile25>
-    <SrcFile26>Drivers\lpspi.src=-1</SrcFile26>
-    <SrcFile27>Beans\i2c_pal\Drivers\S32K\S32K144_SDK01\i2c_pal_global_cfg.drv=1314297402</SrcFile27>
-    <SrcFile28>Drivers\Common\ToolChain_Settings.prg=1316652645</SrcFile28>
-    <SrcFile29>Drivers\S32K\S32K144_SDK01\adc.drv=-1</SrcFile29>
-    <SrcFile30>Drivers\S32K\S32K144_SDK01\spi_pal.drv=-1</SrcFile30>
-    <SrcFile31>Drivers\pwm_pal.src=-1</SrcFile31>
-    <SrcFile32>Drivers\S32K\S32_SDK\wdog_code.drv=-1</SrcFile32>
-    <SrcFile33>Drivers\S32_SDK_DMA_16CH\edma.drv=-1</SrcFile33>
-    <SrcFile34>Drivers\Common\HeaderFreescale.h=1316652645</SrcFile34>
-    <SrcFile35>Drivers\spi_pal.src=-1</SrcFile35>
-    <SrcFile36>Drivers\Common\EBGNSupport\TimingLib.prg=1316652646</SrcFile36>
-    <SrcFile37>Drivers\S32K\S32_SDK_S32K\clock_manager.drv=-1</SrcFile37>
-    <SrcFile38>Drivers\S32K\S32K144_SDK01\ftm_mc.drv=-1</SrcFile38>
-    <SrcFile39>Drivers\S32K\S32K144_SDK01\spi_pal_code.drv=-1</SrcFile39>
-    <SrcFile40>Drivers\S32K\S32K144_SDK01\lpspi.drv=-1</SrcFile40>
-    <SrcFile41>Drivers\Common\Header.h=1316652645</SrcFile41>
-    <SrcFile42>Drivers\adc.src=-1</SrcFile42>
-    <SrcFile43>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1345390891</SrcFile43>
-    <SrcFile44>Drivers\Common\Header.c=1316652645</SrcFile44>
-    <SrcFile45>Drivers\osif.src=-1</SrcFile45>
-    <SrcFile46>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1345390891</SrcFile46>
-    <SrcFile47>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile47>
-    <SrcFile48>Drivers\Common\lpuartAbstract.inc=-1</SrcFile48>
-    <SrcFile49>Drivers\S32_SDK_DMA_16CH\edma_code.drv=-1</SrcFile49>
-    <SrcFile50>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile50>
-    <SrcFile51>Drivers\S32K\S32K144_SDK01\lpi2c.drv=-1</SrcFile51>
-    <SrcFile52>Drivers\S32K\S32K144_SDK01\lpuart.drv=-1</SrcFile52>
-    <SrcFile53>Beans\pwm_pal\Drivers\S32K\S32K144_SDK01\pwm_pal_global_cfg.drv=1314297404</SrcFile53>
-    <SrcFile54>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile54>
-    <SrcFile55>Drivers\lpuart.src=-1</SrcFile55>
-    <SrcFile56>Beans\spi_pal\Drivers\S32K\S32K144_SDK01\spi_pal_global_cfg.drv=1314297460</SrcFile56>
-    <SrcFile57>Drivers\S32K\S32K144_SDK01\pwm_pal_code.drv=-1</SrcFile57>
-    <SrcFile58>Drivers\PEx_S32K.src=1316652645</SrcFile58>
-    <SrcFile59>Drivers\S32K\S32K144_SDK01\lpspi_code.drv=-1</SrcFile59>
-    <SrcFile60>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile60>
-    <SrcFile61>Drivers\ftm_mc.src=-1</SrcFile61>
-    <SrcFile62>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile62>
-    <SrcFile63>Drivers\edma.src=-1</SrcFile63>
-    <SrcFile64>Drivers\lpi2c.src=-1</SrcFile64>
-    <SrcFile65>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile65>
-    <SrcFile66>Drivers\wdog.src=-1</SrcFile66>
-    <SrcFile67>Drivers\S32K\S32K144_SDK01\i2c_pal_code.drv=-1</SrcFile67>
-    <SrcFile68>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile68>
-    <SrcFile69>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile69>
-    <SrcFile70>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile70>
-    <SrcFile71>Drivers\Common\Header.end=1316652645</SrcFile71>
-    <SrcFile72>Drivers\clock_manager.src=-1</SrcFile72>
+    <SrcFile2>Beans\can_pal\Drivers\S32K\S32_SDK\can_pal_global_cfg.drv=1331017398</SrcFile2>
+    <SrcFile3>Beans\_SDK\SdkOptions.chg=1331017399</SrcFile3>
+    <SrcFile4>Drivers\Common\EBGNSupport\StringLib.prg=1316652646</SrcFile4>
+    <SrcFile5>Drivers\S32K\S32K144_SDK01\ftm_mc_code.drv=-1</SrcFile5>
+    <SrcFile6>Drivers\Common\S32KSettings.inc=1316652645</SrcFile6>
+    <SrcFile7>Drivers\S32K\PinSettings_S32K144_100.prg=-1</SrcFile7>
+    <SrcFile8>Drivers\S32K\S32K144_SDK01\lpi2c_code.drv=-1</SrcFile8>
+    <SrcFile9>Drivers\S32K\S32K144_SDK01\adc_code.drv=-1</SrcFile9>
+    <SrcFile10>Drivers\Common\HeaderFreescale.C=1316652645</SrcFile10>
+    <SrcFile11>Drivers\Common\RTOSAdaptor.prg=1316652645</SrcFile11>
+    <SrcFile12>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1316652646</SrcFile12>
+    <SrcFile13>Drivers\sw\PinSettings.drv=-1</SrcFile13>
+    <SrcFile14>Drivers\Common\Header.doxy=1345390891</SrcFile14>
+    <SrcFile15>Drivers\Common\GenInitConfigSequence.prg=1316652645</SrcFile15>
+    <SrcFile16>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1316652646</SrcFile16>
+    <SrcFile17>Drivers\PinSettings.src=-1</SrcFile17>
+    <SrcFile18>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile18>
+    <SrcFile19>Drivers\S32K\HAL_Port_Bridge_V2.prg=1316652646</SrcFile19>
+    <SrcFile20>Drivers\S32K\S32K144_SDK01\lpuart_code.drv=-1</SrcFile20>
+    <SrcFile21>Drivers\S32K\S32_SDK\wdog.drv=-1</SrcFile21>
+    <SrcFile22>Drivers\Common\InitReg32Block.prg=1316652645</SrcFile22>
+    <SrcFile23>Drivers\i2c_pal.src=-1</SrcFile23>
+    <SrcFile24>Drivers\S32K\S32K144_SDK01\i2c_pal.drv=-1</SrcFile24>
+    <SrcFile25>Drivers\S32K\S32K144_SDK01\pwm_pal.drv=-1</SrcFile25>
+    <SrcFile26>Drivers\S32K\StaticSdk_S32K_V4.drv=1316652646</SrcFile26>
+    <SrcFile27>Drivers\lpspi.src=-1</SrcFile27>
+    <SrcFile28>Drivers\S32K\S32_SDK\can_pal.drv=-1</SrcFile28>
+    <SrcFile29>Beans\i2c_pal\Drivers\S32K\S32K144_SDK01\i2c_pal_global_cfg.drv=1314297402</SrcFile29>
+    <SrcFile30>Drivers\Common\ToolChain_Settings.prg=1316652645</SrcFile30>
+    <SrcFile31>Drivers\S32K\S32K144_SDK01\adc.drv=-1</SrcFile31>
+    <SrcFile32>Drivers\S32K\S32K144_SDK01\spi_pal.drv=-1</SrcFile32>
+    <SrcFile33>Drivers\pwm_pal.src=-1</SrcFile33>
+    <SrcFile34>Drivers\S32K\S32_SDK\wdog_code.drv=-1</SrcFile34>
+    <SrcFile35>Drivers\S32_SDK_DMA_16CH\edma.drv=-1</SrcFile35>
+    <SrcFile36>Drivers\Common\HeaderFreescale.h=1316652645</SrcFile36>
+    <SrcFile37>Drivers\spi_pal.src=-1</SrcFile37>
+    <SrcFile38>Drivers\Common\EBGNSupport\TimingLib.prg=1316652646</SrcFile38>
+    <SrcFile39>Drivers\S32K\S32_SDK_S32K\clock_manager.drv=-1</SrcFile39>
+    <SrcFile40>Drivers\S32K\S32K144_SDK01\ftm_mc.drv=-1</SrcFile40>
+    <SrcFile41>Drivers\S32K\S32K144_SDK01\spi_pal_code.drv=-1</SrcFile41>
+    <SrcFile42>Drivers\S32K\S32K144_SDK01\lpspi.drv=-1</SrcFile42>
+    <SrcFile43>Drivers\Common\Header.h=1316652645</SrcFile43>
+    <SrcFile44>Drivers\adc.src=-1</SrcFile44>
+    <SrcFile45>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1345390891</SrcFile45>
+    <SrcFile46>Drivers\Common\Header.c=1316652645</SrcFile46>
+    <SrcFile47>Drivers\osif.src=-1</SrcFile47>
+    <SrcFile48>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1345390891</SrcFile48>
+    <SrcFile49>Drivers\Common\WriteBlock_NotRst.prg=1316652645</SrcFile49>
+    <SrcFile50>Drivers\Common\lpuartAbstract.inc=-1</SrcFile50>
+    <SrcFile51>Drivers\S32_SDK_DMA_16CH\edma_code.drv=-1</SrcFile51>
+    <SrcFile52>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1316652646</SrcFile52>
+    <SrcFile53>Drivers\S32K\S32K144_SDK01\lpi2c.drv=-1</SrcFile53>
+    <SrcFile54>Drivers\S32K\S32K144_SDK01\lpuart.drv=-1</SrcFile54>
+    <SrcFile55>Beans\pwm_pal\Drivers\S32K\S32K144_SDK01\pwm_pal_global_cfg.drv=1314297404</SrcFile55>
+    <SrcFile56>Drivers\can_pal.src=-1</SrcFile56>
+    <SrcFile57>Drivers\Common\InitRegBlock.prg=1316652645</SrcFile57>
+    <SrcFile58>Drivers\lpuart.src=-1</SrcFile58>
+    <SrcFile59>Beans\spi_pal\Drivers\S32K\S32K144_SDK01\spi_pal_global_cfg.drv=1314297460</SrcFile59>
+    <SrcFile60>Drivers\S32K\S32_SDK\can_pal_code.drv=-1</SrcFile60>
+    <SrcFile61>Drivers\S32K\S32K144_SDK01\pwm_pal_code.drv=-1</SrcFile61>
+    <SrcFile62>Drivers\PEx_S32K.src=1316652645</SrcFile62>
+    <SrcFile63>Drivers\S32K\S32K144_SDK01\lpspi_code.drv=-1</SrcFile63>
+    <SrcFile64>Drivers\Common\Static_SupportSubroutines.prg=1316652645</SrcFile64>
+    <SrcFile65>Drivers\ftm_mc.src=-1</SrcFile65>
+    <SrcFile66>Drivers\S32K\S32_SDK_S32K\clock_manager_code.drv=-1</SrcFile66>
+    <SrcFile67>Drivers\edma.src=-1</SrcFile67>
+    <SrcFile68>Drivers\lpi2c.src=-1</SrcFile68>
+    <SrcFile69>Drivers\Common\S32KAbstract.inc=1316652645</SrcFile69>
+    <SrcFile70>Drivers\wdog.src=-1</SrcFile70>
+    <SrcFile71>Drivers\S32K\S32K144_SDK01\i2c_pal_code.drv=-1</SrcFile71>
+    <SrcFile72>Drivers\Common\HeaderCopyright.inc=1316652645</SrcFile72>
+    <SrcFile73>Drivers\S32K\StaticSdk_S32K.drv=1316652646</SrcFile73>
+    <SrcFile74>Drivers\GlobalConfigFiles.drv=1316652645</SrcFile74>
+    <SrcFile75>Drivers\Common\Header.end=1316652645</SrcFile75>
+    <SrcFile76>Drivers\clock_manager.src=-1</SrcFile76>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 

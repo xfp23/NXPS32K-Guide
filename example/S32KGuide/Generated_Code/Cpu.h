@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K14XRM Rev. 2, 02/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-07-10, 11:19, # CodeGen: 30
+**     Date/Time   : 2025-07-11, 10:19, # CodeGen: 39
 **     Abstract    :
 **
 **     Settings    :
@@ -72,6 +72,7 @@
 #include "lpspi_shared_function.h"
 #include "spi_pal.h"
 #include "wdog_driver.h"
+#include "can_pal.h"
 #include "system_S32K144.h"
 
 /* Including needed modules to compile this module/procedure */
@@ -87,6 +88,7 @@
 #include "lpspiCom1.h"
 #include "spi1.h"
 #include "watchdog1.h"
+#include "can_pal1.h"
 
 #ifdef __cplusplus
 extern "C" {

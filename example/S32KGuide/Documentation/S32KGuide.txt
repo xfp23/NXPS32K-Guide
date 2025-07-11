@@ -318,6 +318,24 @@ Module "watchdog1" (component wdog)
                 should set this field to 0x01U in order to indicate that the WDOG is functioning normally.
    - watchdog1_WDOG_DRV_GetTestMode -This function verifies the test mode of the WDOG.
 
+Module "can_pal1"  (component can_pal)
+   - can_pal1_CAN_Init -Initializes the CAN module.
+   - can_pal1_CAN_Deinit -De-initializes the CAN module.
+   - can_pal1_CAN_SetBitrate -Configures the CAN bitrate.
+   - can_pal1_CAN_GetBitrate -Returns the CAN bitrate.
+   - can_pal1_CAN_ConfigTxBuff -Configures a buffer for transmission.
+   - can_pal1_CAN_ConfigRemoteResponseBuff -Configures a transmit message buffer for remote frame response.
+   - can_pal1_CAN_ConfigRxBuff -Configures a buffer for reception.
+   - can_pal1_CAN_Send -Sends a CAN frame using the specified buffer.
+   - can_pal1_CAN_SendBlocking -Sends a CAN frame using the specified buffer, in a blocking manner.
+   - can_pal1_CAN_Receive -Receives a CAN frame using the specified message buffer.
+   - can_pal1_CAN_ReceiveBlocking -Receives a CAN frame using the specified buffer, in a blocking manner.
+   - can_pal1_CAN_AbortTransfer -Ends a non-blocking CAN transfer early.
+   - can_pal1_CAN_SetRxFilter -Configures an ID filter for a specific reception buffer.
+   - can_pal1_CAN_GetTransferStatus -Returns the state of the previous CAN transfer.
+   - can_pal1_CAN_InstallEventCallback -Installs a callback function for the IRQ handler.
+   - can_pal1_CAN_GetDefaultConfig -Returns the default values for the CAN module.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

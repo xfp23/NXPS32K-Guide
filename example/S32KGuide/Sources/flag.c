@@ -2,6 +2,8 @@
 
 UserCommon_t UserCommon = {0};
 
+can_message_t recvMsg_CAN0 = {0};
+
 /**
  * @brief 指南gpio教程
  *
@@ -181,6 +183,7 @@ void UART_RX_ISR(void *driverState, uart_event_t event, void *userData)
 
 /**
  * @brief DMA接收回调
+ *
  */
 void UART_RX_DMA_Callback(void *driverState, uart_event_t event, void *userData)
 {
@@ -203,9 +206,6 @@ void UART_RX_DMA_Callback(void *driverState, uart_event_t event, void *userData)
 
 lpi2c_master_state_t lpi2c1_MasterState;
 
-#define I2C_TIMEOUT_MS 100U
-#define SEND_STOP_AFTER_TX true
-
 /**
  * @brief I2C 写入多个字节到当前已配置的从设备地址
  *
@@ -218,11 +218,11 @@ void UserTools_I2C_Writebytes(uint8_t *buffer, size_t size)
         return;
 
     status_t status = LPI2C_DRV_MasterSendDataBlocking(
-        INST_LPI2C1,        // I2C实例编号
-        buffer,             // 要发送的数据
-        size,               // 数据长度
-        SEND_STOP_AFTER_TX, // 是否发送 STOP
-        I2C_TIMEOUT_MS      // 超时时间
+        INST_LPI2C1, // I2C实例编号
+        buffer,      // 要发送的数据
+        size,        // 数据长度
+        true,        // 是否发送 STOP
+        100U         // 超时时间
     );
     I2C_MasterSendDataBlocking(&i2c1_instance, buffer, size, true, 100);
 
@@ -244,11 +244,11 @@ void UserTools_I2C_Readbytes(uint8_t *buffer, size_t size)
         return;
 
     status_t status = LPI2C_DRV_MasterReceiveDataBlocking(
-        INST_LPI2C1,        // I2C实例编号
-        buffer,             // 接收缓冲区
-        size,               // 要接收的数据字节数
-        SEND_STOP_AFTER_TX, // 是否发送 STOP
-        I2C_TIMEOUT_MS      // 超时时间
+        INST_LPI2C1, // I2C实例编号
+        buffer,      // 接收缓冲区
+        size,        // 要接收的数据字节数
+        true,        // 是否发送 STOP
+        100U         // 超时时间
     );
 
     if (status != STATUS_SUCCESS)
@@ -257,6 +257,12 @@ void UserTools_I2C_Readbytes(uint8_t *buffer, size_t size)
     }
 }
 
+/**
+ * @brief
+ *
+ * @param buffer
+ * @param size
+ */
 void UserTools_Spi_Writebytes(uint8_t *buffer, size_t size)
 {
     if (buffer == NULL || size == 0)
@@ -279,6 +285,12 @@ void UserTools_Spi_Writebytes(uint8_t *buffer, size_t size)
 #endif
 }
 
+/**
+ * @brief
+ *
+ * @param buffer
+ * @param size
+ */
 void UserTools_Spi_Readbytes(uint8_t *buffer, size_t size)
 {
     if (buffer == NULL || size == 0)
@@ -301,6 +313,14 @@ void UserTools_Spi_Readbytes(uint8_t *buffer, size_t size)
 #endif
 }
 
+/**
+ * @brief
+ *
+ * @param txBuffer
+ * @param tx_size
+ * @param rxBuffer
+ * @param rx_size
+ */
 void UserTools_Spi_WriteRead_bytes(uint8_t *txBuffer, size_t tx_size, uint8_t *rxBuffer, size_t rx_size)
 {
     if ((txBuffer == NULL && tx_size > 0) || (rxBuffer == NULL && rx_size > 0))
@@ -329,3 +349,107 @@ void UserTools_Spi_WriteRead_bytes(uint8_t *txBuffer, size_t tx_size, uint8_t *r
         // 错误处理
     }
 }
+
+/**
+ * @brief CAN事件回调
+ *
+ * @param canInstance 实例编号
+ * @param eventType 事件类型
+ * @param mailboxIndex
+ * @param userData
+ */
+void CAN_EventHandler(uint32_t canInstance, can_event_t eventType, uint32_t mailboxIndex, void *userData)
+{
+    if (canInstance == 0)
+    {
+        CAN_Receive(&can_pal1_instance, mailboxIndex, &recvMsg_CAN0); // 接收报文并重新注册回调函数
+        switch (eventType)
+        {
+        case CAN_EVENT_RX_COMPLETE: // rx完成
+            /**  user code begin */
+
+            /** user code end */
+            break;
+        case CAN_EVENT_TX_COMPLETE: // tx完成
+            /**  user code begin */
+
+            /** user code end */
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+/**
+ * @brief
+ *
+ * @param buffer
+ * @param id
+ * @param mailboxIndex
+ * @param size
+ */
+void UserTools_CANTransmit(uint8_t *buffer, uint32_t id, uint16_t mailboxIndex, size_t size)
+{
+    if (size > 8)
+        size = 8; // 限制最大长度
+
+    can_message_t Tx_msg = {
+        .cs = CAN_MSG_ID_STD,
+        .id = id};
+
+    memcpy(Tx_msg.data, buffer, size);
+#if 0
+    CAN_Send(&can_pal1_instance, mailboxIndex, &Tx_msg); // 非阻塞发送
+#else
+    CAN_SendBlocking(&can_pal1_instance, mailboxIndex, &Tx_msg, 100); // 阻塞发送
+#endif
+}
+
+/**
+ * @brief 
+ * 
+ * @param buffer 
+ * @param expected_id 
+ * @param mailboxIndex 
+ * @param size 
+ */
+void UserTools_CANReceive(uint8_t *buffer, uint32_t expected_id, uint16_t mailboxIndex, size_t size)
+{
+    can_message_t message = {0};
+
+#if 1
+    if (CAN_ReceiveBlocking(&can_pal1_instance, mailboxIndex, &message, 100) != STATUS_SUCCESS)
+        return; // 超时或错误
+#else
+    CAN_Receive(&can_pal1_instance, mailboxIndex, &message);
+#endif
+    // 可选：检查是否收到目标 ID（注意扩展帧可能会误判）
+    if (message.id != expected_id)
+        return;
+
+    // 安全拷贝
+    size_t copyLen = (message.length < size) ? message.length : size;
+    memcpy(buffer, message.data, copyLen);
+}
+
+
+/**
+ * @brief lin总线校验ID
+ * 
+ * @param id 
+ * @return uint8_t 
+ */
+uint8_t lin_calc_protected_id(uint8_t id)
+{
+    id &= 0x3F;  // 只保留低6位
+    uint8_t p0 = ((id >> 0) & 0x01) ^ ((id >> 1) & 0x01) ^
+                 ((id >> 2) & 0x01) ^ ((id >> 4) & 0x01);
+
+    uint8_t p1 = ~(((id >> 1) & 0x01) ^ ((id >> 3) & 0x01) ^
+                   ((id >> 4) & 0x01) ^ ((id >> 5) & 0x01)) & 0x01;
+
+    return (p1 << 7) | (p0 << 6) | id;
+}
+
+
