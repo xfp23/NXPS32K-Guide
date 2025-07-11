@@ -40,6 +40,8 @@
 
 [互补输出](./Peripheral/Timer/compleOutput.md)
 
+[比较输出](./Peripheral/Timer/compare_Output.md)
+
 ### UART
 
 [UART](./Peripheral/uart/uart.md)

@@ -65,8 +65,8 @@ int main(void)
   ///** 设置外部中断 *
 
   /* 设置中断触发条件 */
-  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�??????????????
-  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�??????????????
+  PINS_DRV_SetPinIntSel(PORTC, 12, PORT_INT_RISING_EDGE);  // PTC12 上升沿触�??????????????
+  PINS_DRV_SetPinIntSel(PORTC, 13, PORT_INT_FALLING_EDGE); // PTC13 下降沿触�??????????????
   /* 安装中断处理函数 */
   INT_SYS_InstallHandler(PORTC_IRQn, &PTC_EXT_IRQ, NULL);
   /* 启用中断 */
@@ -87,12 +87,19 @@ int main(void)
   LPI2C_DRV_MasterInit(INST_LPI2C1, &lpi2c1_MasterConfig0, &lpi2c1_MasterState);
   /** PWM init */
   PWM_Init(&pwm_pal1Instance, &pwm_pal1Configs);
-  PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50 / 100)); // 占空比根据周期计�????????????
+  PWM_UpdateDuty(&pwm_pal1Instance, pwm_pal1Configs.pwmChannels->channel, pwm_pal1Configs.pwmChannels->period * (50 / 100)); // 占空比根据周期计�????????????
 
   /** spi init
    */
   LPSPI_DRV_MasterInit(LPSPICOM1, &lpspiCom1State, &lpspiCom1_MasterConfig0);
   // LPSPI_DRV_MasterTransfer(LPSPICOM1,);
+
+
+  /* CAN init */
+
+
+/** LIN init */
+
 
 #if USE_WDT
   /** WDOG init */
